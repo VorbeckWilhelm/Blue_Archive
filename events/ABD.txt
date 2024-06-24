@@ -1,0 +1,284 @@
+add_namespace = ABD
+#政治线第一阶段事件
+country_event = {
+	id = ABD.1
+    picture = gfx_load_5
+    title = ABD.1.t
+    desc = ABD.1.d
+	is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.1.a
+		trigger = {
+			tag = ABD
+		}
+	}
+	option = {
+		name = ABD.1.b
+		trigger = {
+			tag = ABD
+		}
+	}
+}
+#边境冲突内容
+country_event = {
+	id = ABD.2
+	picture = gfx_load_5
+	title = ABD.2.t
+    desc = ABD.2.d
+is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.2.a
+		trigger = {
+			tag = ABD
+		}
+		start_border_war = {
+		change_state_after_war = no
+		attacker = {
+			state = 114
+			num_provinces = 4
+			on_win = KAI.1
+			on_lose = KAI.2
+			on_cancel = KAI.3
+		}
+					
+		defender = {
+			state = 88
+			num_provinces = 4
+			on_win = ABD.3
+			on_lose = ABD.4
+			on_cancel = ABD.5
+		}
+	}
+	}
+	
+}
+country_event = {
+	id = ABD.3
+    picture = gfx_load_5
+    title = ABD.3.t
+    desc = ABD.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.3.a 
+		trigger = {
+			tag = ABD
+		}
+		114 = { add_core_of = ABD }
+		ABD = { transfer_state = 114 }
+	}
+}
+country_event = {
+	id = ABD.4
+    picture = gfx_load_5
+    title = ABD.4.t
+    desc = ABD.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.4.a 
+		trigger = {
+			tag = ABD
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+country_event = {
+	id = ABD.5
+    picture = gfx_load_5
+    title = ABD.5.t
+    desc = ABD.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.5.a 
+		trigger = {
+			tag = ABD
+		}
+	}
+}
+country_event = {
+	id = ABD.6
+    picture = gfx_load_5
+    title = ABD.6.t
+    desc = ABD.6.d
+	is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.6.a 
+		trigger = {
+			tag = ABD
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+#政治线第二阶段事件
+country_event = {
+	id = ABD.7
+    picture = gfx_load_5
+    title = ABD.7.t
+    desc = ABD.7.d
+	is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.7.a 
+		trigger = {
+			tag = ABD
+		}
+		declare_war_on = {
+			target = KAI
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = ABD.8
+    picture = gfx_load_5
+    title = ABD.8.t
+    desc = ABD.8.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.8.a 
+		trigger = {
+			tag = ABD
+		}
+		mark_focus_tree_layout_dirty = yes
+		add_ideas = {
+			ABD_buff
+		}
+	}
+}
+#政治线第四阶段
+country_event = {
+	id = ABD.9
+    picture = gfx_load_5
+    title = ABD.9.t
+    desc = ABD.9.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.9.a 
+		trigger = {
+			tag = ABD
+		}
+	}
+}
+country_event = {
+	id = ABD.10
+    picture = gfx_load_5
+    title = ABD.10.t
+    desc = ABD.10.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.10.a 
+		trigger = {
+			tag = ABD
+		}
+		white_peace = ABD
+		white_peace = KAI
+	}
+}
+country_event = {
+	id = ABD.11
+    picture = gfx_load_5
+    title = ABD.11.t
+    desc = ABD.11.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.11.a 
+		trigger = {
+			tag = ABD
+		}
+		country_event = {id = ABD.12 days = 1}
+	}
+}
+country_event = {
+	id = ABD.12
+    picture = gfx_load_5
+    title = ABD.12.t
+    desc = ABD.12.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.12.a 
+		trigger = {
+			tag = ABD
+		}
+	}
+}
+country_event = {
+	id = ABD.13
+    picture = gfx_load_5
+    title = ABD.13.t
+    desc = ABD.13.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.13.a 
+		trigger = {
+			tag = ABD
+		}
+		mark_focus_tree_layout_dirty = yes
+		set_variable = { ABDrobberyPreparedness = 0 }
+	}
+	
+}
+country_event = {
+	id = ABD.14
+    picture = gfx_load_5
+    title = ABD.14.t
+    desc = ABD.14.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.14.a 
+		trigger = {
+			tag = ABD
+		}
+		complete_national_focus = ABD_F_0
+	}
+}
+country_event = {
+	id = ABD.15
+    picture = gfx_load_5
+    title = ABD.15.t
+    desc = ABD.15.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = ABD.15.a 
+		trigger = {
+			tag = ABD
+		}
+		complete_national_focus = ABD_F_0
+	}
+}
+country_event = {
+	id = ABD.16
+    picture = gfx_load_5
+    title = ABD.16.t
+    desc = ABD.16.d
+    trigger = {
+		has_completed_focus = ABD_F_1
+		has_completed_focus = ABD_F_2
+	}
+	mean_time_to_happen = { days = 7 }
+    fire_only_once = yes
+    option = { 
+        name = ABD.16.a 
+		trigger = {
+			tag = ABD
+		}
+		set_country_flag = hoshino_missing
+		mark_focus_tree_layout_dirty = yes
+	}
+}

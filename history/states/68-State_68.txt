@@ -1,0 +1,13 @@
+state={
+	id=68
+	name="STATE_68"
+	provinces={
+		123 541 645 765 773 847 1007 1111 1136 1885 1936 1996 2043 2280 2906 2923 2937 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=MSC
+		add_core_of=MSC
+	}
+}

@@ -1,0 +1,14 @@
+state={
+	id=97
+	name="STATE_97"
+	provinces={
+		94 501 502 580 586 643 727 833 836 963 1150 1228 1264 1389 1543 1673 2044 2206 2244 2308 2415 3052 3065 3073 3085 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=KAI
+		add_core_of=KAI
+		add_core_of=ABD
+	}
+}

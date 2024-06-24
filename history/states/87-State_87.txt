@@ -1,0 +1,13 @@
+state={
+	id=87
+	name="STATE_87"
+	provinces={
+		76 110 214 245 409 460 469 621 638 701 877 1113 1161 1338 1366 1378 1450 1566 1581 1756 1956 1988 2017 2058 2216 2226 2389 2414 2496 2537 2563 2982 2986 3025 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=GHN
+		add_core_of=GHN
+	}
+}

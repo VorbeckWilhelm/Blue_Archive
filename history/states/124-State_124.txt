@@ -1,0 +1,13 @@
+state={
+	id=124
+	name="STATE_124"
+	provinces={
+		12 72 77 210 247 295 467 599 1062 1405 1458 1553 1666 1868 1914 3177 3179 3188 3193 3202 3204 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=ABD
+		add_core_of=ABD
+	}
+}

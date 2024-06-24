@@ -1,0 +1,13 @@
+state={
+	id=157
+	name="STATE_157"
+	provinces={
+		418 633 1359 1588 1603 1732 1947 2478 3366 3367 3368 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=GHN
+		add_core_of=GHN
+	}
+}

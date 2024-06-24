@@ -1,0 +1,13 @@
+state={
+	id=149
+	name="STATE_149"
+	provinces={
+		41 163 254 559 790 801 823 848 870 997 1078 1346 1418 1522 1539 1987 2093 2175 2261 2438 3311 3317 3329 3334 3343 3344 3351 3356 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=SHJ
+		add_core_of=SHJ
+	}
+}

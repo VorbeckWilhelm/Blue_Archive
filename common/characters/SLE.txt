@@ -1,0 +1,15 @@
+characters = {
+	SLE_Teacher = {#牢湿
+		name = "SLE_TEACHER" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLE/Teacher.png"
+			}
+		}
+		country_leader = {
+			ideology = progressivism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

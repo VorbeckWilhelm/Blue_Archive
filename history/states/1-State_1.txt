@@ -1,0 +1,16 @@
+state={
+	id=1
+	name="STATE_1"
+	provinces={
+		334 584 649 657 742 781 855 865 1906 1924 2076 2365 2553 2578 2579 2580 2582 2584 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	resources={
+		steel=10
+	}
+	history={
+		owner=RWC
+		add_core_of=RWC
+	}
+}

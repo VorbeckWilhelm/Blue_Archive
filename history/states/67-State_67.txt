@@ -1,0 +1,13 @@
+state={
+	id=67
+	name="STATE_67"
+	provinces={
+		80 303 375 749 785 834 889 956 1299 1451 1819 1920 2033 2090 2296 2309 2549 2908 2917 2936 2945 2971 2989 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=GSC
+		add_core_of=GSC
+	}
+}

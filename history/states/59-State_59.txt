@@ -1,0 +1,13 @@
+state={
+	id=59
+	name="STATE_59"
+	provinces={
+		851 924 939 1054 1130 1184 1362 1479 1923 2057 2827 2862 2871 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=ABD
+		add_core_of=ABD
+	}
+}

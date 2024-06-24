@@ -1,0 +1,13 @@
+state={
+	id=108
+	name="STATE_108"
+	provinces={
+		45 271 732 1335 3082 3123 3148 3159 3172 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=HAA
+		add_core_of=HAA
+	}
+}

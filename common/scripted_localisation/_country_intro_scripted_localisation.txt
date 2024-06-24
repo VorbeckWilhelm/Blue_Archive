@@ -1,0 +1,308 @@
+defined_text = {
+	name = GetPlayerCountryPage
+	#Abydos
+	text = {
+		trigger = {
+			original_tag = ABD
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = ABD_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = ABD
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = ABD_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = ABD
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = ABD_intro_page_3
+	}
+	#Arius
+	text = {
+		trigger = {
+			original_tag = ARI
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = ARI_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = ARI
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = ARI_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = ARI
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = ARI_intro_page_3
+	}
+	#hayyiyako
+	text = {
+		trigger = {
+			original_tag = HAA
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = HAA_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = HAA
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = HAA_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = HAA
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = HAA_intro_page_3
+	}
+	#Gehenna
+	text = {
+		trigger = {
+			original_tag = GHN
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = GHN_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = GHN
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = GHN_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = GHN
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = GHN_intro_page_3
+	}
+	#GSC
+	text = {
+		trigger = {
+			original_tag = GSC
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = GSC_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = GSC
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = GSC_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = GSC
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = GSC_intro_page_3
+	}
+	#kaiser
+	text = {
+		trigger = {
+			original_tag = KAI
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = KAI_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = KAI
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = KAI_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = KAI
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = KAI_intro_page_3
+	}
+	#Millenium
+	text = {
+		trigger = {
+			original_tag = MSC
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = MSC_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = MSC
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = MSC_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = MSC
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = MSC_intro_page_3
+	}
+	#Redwinter
+	text = {
+		trigger = {
+			original_tag = RWC
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = RWC_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = RWC
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = RWC_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = RWC
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = RWC_intro_page_3
+	}
+	#Shanhaijing
+	text = {
+		trigger = {
+			original_tag = SHJ
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = SHJ_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = SHJ
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = SHJ_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = SHJ
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = SHJ_intro_page_3
+	}
+	#Gemaatria
+	text = {
+		trigger = {
+			original_tag = SMH
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = SMH_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = SMH
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = SMH_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = SMH
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = SMH_intro_page_3
+	}
+	#Trinity
+	text = {
+		trigger = {
+			original_tag = TND
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = TND_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = TND
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = TND_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = TND
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = TND_intro_page_3
+	}
+	text = {
+		trigger = {
+			original_tag = BLM
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = BLM_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = BLM
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = BLM_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = BLM
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = BLM_intro_page_3
+	}
+	text = {
+		trigger = {
+			original_tag = SLE
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = SLE_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = SLE
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = SLE_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = SLE
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = SLE_intro_page_3
+	}
+	text = {
+		trigger = {
+			original_tag = VLK
+			has_country_flag = intro_gui_page_1
+		}
+		localization_key = VLK_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = VLK
+			has_country_flag = intro_gui_page_2
+		}
+		localization_key = VLK_intro_page_2
+	}
+	text = {
+		trigger = {
+			original_tag = VLK
+			has_country_flag = intro_gui_page_3
+		}
+		localization_key = VLK_intro_page_3
+	}
+}

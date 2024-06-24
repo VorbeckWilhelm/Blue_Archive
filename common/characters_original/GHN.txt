@@ -1,0 +1,41 @@
+characters = {
+	GHN_hanuma = {
+		name = "GHN_HANUMA" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GHN/Makoto.png"
+			}
+		}
+		country_leader = {
+			ideology = militarism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+	GHN_hina = {
+		name = "GHN_HINA"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GHN/hina.png"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+	GHN_ESC = {
+		name = "GHN_ESC"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GHN/GHN_ESC.png"
+			}
+		}
+		country_leader = {
+			ideology = emergency_military_government
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

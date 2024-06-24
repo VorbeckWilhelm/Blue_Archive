@@ -1,0 +1,18 @@
+add_namespace = GHN
+country_event = {
+	id = GHN.1
+    picture = gfx_load_5
+    title = GHN.1.t
+    desc = GHN.1.d
+	mean_time_to_happen = { days = 1 }
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = GHN.1.a 
+		trigger = {
+			tag = GHN
+		}
+		retire_country_leader = yes
+		add_ideas = GHN_buff
+	}
+}

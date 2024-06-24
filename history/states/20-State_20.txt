@@ -1,0 +1,13 @@
+state={
+	id=20
+	name="STATE_20"
+	provinces={
+		115 143 166 478 984 1010 1223 1255 1531 1768 1892 2435 2583 2585 2589 2592 2597 2599 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=RWC
+		add_core_of=RWC
+	}
+}

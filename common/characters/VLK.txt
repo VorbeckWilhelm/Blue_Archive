@@ -1,0 +1,15 @@
+characters = {
+	VLK_Kanna = {#晶哥
+		name = "VLK_KANNA" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VLK/Kanna.png"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

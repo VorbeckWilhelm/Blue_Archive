@@ -1,0 +1,51 @@
+ABD = { color = rgb { 243 236 172 }
+		color_ui = rgb { 243 236 172 }
+}
+
+ARI = {	color = rgb { 50 50 50 }
+		color_ui = rgb { 50 50 50 }
+}
+
+HAA = {	color = rgb { 50 50 50 }
+		color_ui = rgb { 50 50 50 }
+}
+
+GHN = {	color = rgb { 45 10 20 }
+		color_ui = rgb { 45 10 20 }
+}
+
+GSC = {	color = rgb { 107 169 237 }
+		color_ui = rgb { 107 169 237 }
+}
+
+KAI = {	color = rgb { 120 60 84 }
+		color_ui = rgb { 120 60 84 }
+}
+
+MSC = {	color = rgb { 177 53 70 }
+		color_ui = rgb { 177 53 70 }
+}
+
+RWC = {	color = rgb { 127 15 23 }
+		color_ui = rgb { 127 15 23 }
+}
+
+SHJ = {	color = rgb { 225 145 88 }
+		color_ui = rgb { 225 145 88 }
+}
+
+SMH = {	color = rgb { 0 0 0 }
+		color_ui = rgb { 0 0 0 }
+}
+
+THM = {	color = rgb { 125 56 89 }
+		color_ui = rgb { 125 56 89 }
+}
+
+TND = {	color = rgb { 225 225 225 }
+		color_ui = rgb { 225 225 225 }
+}
+
+COL = {	color = rgb { 255 255 255 }
+		color_ui = rgb { 255 255 255 }
+}

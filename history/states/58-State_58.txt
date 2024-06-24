@@ -1,0 +1,13 @@
+state={
+	id=58
+	name="STATE_58"
+	provinces={
+		124 146 306 433 646 744 1329 1384 1393 1432 1711 1786 1888 2009 2012 2089 2111 2126 2253 2431 2562 2812 2834 2846 2865 2870 2889 2899 2915 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=BLM
+		add_core_of=BLM
+	}
+}

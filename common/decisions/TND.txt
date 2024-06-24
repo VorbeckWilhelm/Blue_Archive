@@ -1,0 +1,231 @@
+TND_student_withdrawal_crisis_decision_category = {
+	Hifumi = {
+		icon = x
+		
+		cost = 5
+		days_remove = 3
+		
+		fire_only_once = no
+		days_re_enable = 5
+
+		available  = {
+			original_tag  = TND
+			has_country_flag = schale_interfered
+		}
+		remove_effect = {  
+			add_to_variable = { TNDHifumiExamresult = 5 }
+		}
+	}
+	Azusa = {
+		icon = x
+		cost = 5
+		days_remove = 3
+		fire_only_once = no
+		days_re_enable = 5
+		available  = {
+			original_tag  = TND
+			has_country_flag = schale_interfered
+		}
+		remove_effect = {
+			add_to_variable = { TNDAzusaExamresult = 5 }
+		}
+	}
+	Hanako = {
+		icon = x
+		cost = 5
+		days_remove = 3
+		fire_only_once = no
+		days_re_enable = 5
+		available  = {
+			original_tag  = TND
+			has_country_flag = schale_interfered
+		}
+		remove_effect = {
+			add_to_variable = { TNDHanakoExamresult = 5 }
+		}
+	}
+	Koharu = {
+		icon = x
+		cost = 5
+		days_remove = 3
+		fire_only_once = no
+		days_re_enable = 5
+		available  = {
+			original_tag  = TND
+			has_country_flag = schale_interfered
+		}
+		remove_effect = {
+			add_to_variable = { TNDKoharuExamresult = 5 }
+		}
+	}
+	fair_testing = {     
+		activation = {
+				has_global_flag =  fair_testing                 
+		}                                    
+		available = {                           
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = { 
+			if = {
+				limit = { 
+					AND = {
+					check_variable = {TNDHifumiExamresult > 59.99}
+					check_variable = {TNDAzusaExamresult > 59.99}
+					check_variable = {TNDHanakoExamresult > 59.99}
+					check_variable = {TNDKoharuExamresult > 59.99}
+						  }
+						}
+				country_event = { id  = TND.6 days = 1 }
+				clr_global_flag = fair_testing
+				set_country_flag = test_finished
+			else = {
+				country_event = { id  = TND.7 days = 3 }
+				clr_global_flag = fair_testing
+				set_country_flag = exam2 
+				   }
+			}                     	
+		}
+	}
+
+	fair_testing2 = {     
+		activation = {
+				has_country_flag = exam2     
+		}
+		available = {                           
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = { 
+			if = {
+				limit = { 
+					AND = {
+					check_variable = {TNDHifumiExamresult > 59.99}
+					check_variable = {TNDAzusaExamresult > 59.99}
+					check_variable = {TNDHanakoExamresult > 59.99}
+					check_variable = {TNDKoharuExamresult > 59.99}
+						  }
+						}
+				country_event = { id  = TND.6 days = 1 }
+				clr_country_flag = exam2
+				set_country_flag = test_finished
+			else = {
+				country_event = { id  = TND.7 days = 3 }
+				clr_country_flag = exam2
+				set_country_flag = exam3
+				   }
+			}                     	
+		}
+	}
+	fair_testing3 = {     
+		activation = {
+				has_country_flag = exam3    
+		}
+		available = {                           
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = { 
+			if = {
+				limit = { 
+					AND = {
+					check_variable = {TNDHifumiExamresult > 59.99}
+					check_variable = {TNDAzusaExamresult > 59.99}
+					check_variable = {TNDHanakoExamresult > 59.99}
+					check_variable = {TNDKoharuExamresult > 59.99}
+						  }
+						}
+				country_event = { id  = TND.6 days = 1 }
+				clr_country_flag = exam3
+				set_country_flag = test_finished
+			else = {
+				country_event = { id  = TND.7 days = 3 }
+				clr_country_flag = exam3
+				set_country_flag = test_finished
+				set_country_flag = bukebutuixue
+				   }
+			}                     	
+		}
+	}
+}
+
+TND_limited_war_paperness_decision_category = {
+	Infantry_equipment_research = {
+		icon = x
+		cost = 5
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 30
+		available  = {
+			original_tag  = TND
+		}
+		remove_effect = {
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+	}
+	Infantry_equipment_research = {
+		icon = x
+		cost = 5
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 30
+		available  = {
+			original_tag  = TND
+		}
+		remove_effect = {
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+	}
+	Infantry_equipment_research = {
+		icon = x
+		cost = 5
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 30
+		available  = {
+			original_tag  = TND
+		}
+		remove_effect = {
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+	}
+	Infantry_equipment_research = {
+		icon = x
+		cost = 5
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 30
+		available  = {
+			original_tag  = TND
+		}
+		remove_effect = {
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+	}
+	Infantry_equipment_research = {
+		icon = x
+		cost = 5
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 30
+		available  = {
+			original_tag  = TND
+		}
+		remove_effect = {
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+	}
+}

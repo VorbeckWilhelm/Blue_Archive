@@ -1,0 +1,15 @@
+characters = {
+	TND_nagisa = {
+		name = "TND_NAGISA" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TND/Nagisa.png"
+			}
+		}
+		country_leader = {
+			ideology = theocratic_authoritarianism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

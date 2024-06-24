@@ -1,0 +1,24 @@
+GHN_politics_struggle_decision = {
+	visible = {
+		original_tag = GHN
+		NOT = {
+			has_country_flag = GHN_power_struggle_end
+		}
+	}
+	priority = 1
+}
+GHN_generic_decision_category = {
+	visible = {
+		original_tag = GHN
+	}
+	priority = 2
+}
+GHN_eden_treaty_decision_category = {
+	icon = x
+	picture = "GFX_eden_treaty_pic"
+	visible = {
+		original_tag = GHN
+		has_country_flag = GHN_eden_treaty_decision_group
+	}
+	priority = 3
+}

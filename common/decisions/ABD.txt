@@ -1,0 +1,64 @@
+ABD_bank_robbery_decision_category = {
+	testing = {
+		
+		icon = x
+		
+		cost = 5
+		days_remove = 7
+		
+		fire_only_once = no
+		days_re_enable = 7
+
+		available  = {
+			original_tag  = ABD
+		}
+		complete_effect = {  
+			
+		}
+
+	}
+
+	testing2 = {
+		
+		icon = x
+		
+		cost = 0
+		days_remove = 7
+		
+		fire_only_once = no
+		days_re_enable = 14
+
+		available  = {
+			original_tag  = ABD
+		}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+			add_to_variable = { ABDrobberyPreparedness = 20 }
+		}
+}
+	testing3 = {
+		icon = x
+		cost = 0
+		days_remove = 7
+		fire_only_once = no
+		days_re_enable = 14
+		available = {
+			original_tag  = ABD
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					original_tag = ABD
+					check_variable = { ABDrobberyPreparedness > 69.99 }
+				}
+					country_event = { id = ABD.14 hours = 1 }
+				else = {
+					country_event = { id = ABD.15 hours = 1 }
+				}
+				
+			}
+		}
+}
+}

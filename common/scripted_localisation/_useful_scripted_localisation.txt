@@ -1,0 +1,123 @@
+defined_text = {
+    name = GetRulingIdeologySubtype
+	text = {
+		trigger = {
+			has_country_leader_ideology = conservatism
+		}
+		localization_key = conservatism
+    }
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberalism
+		}
+		localization_key = liberalism
+    }
+	text = {
+		trigger = {
+			has_country_leader_ideology = theocratic_democracy
+		}
+		localization_key = theocratic_democracy
+    }
+	text = {
+		trigger = {
+			has_country_leader_ideology = progressivism
+		}
+		localization_key = progressivism
+    }
+	text = {
+		trigger = {
+			has_country_leader_ideology = reformed_socialism
+		}
+		localization_key = reformed_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = technocratic_socialism
+		}
+		localization_key = technocratic_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = democratic_socialism
+		}
+		localization_key = democratic_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = communism
+		}
+		localization_key = communism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theocratic_authoritarianism
+		}
+		localization_key = theocratic_authoritarianism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = monarchy
+		}
+		localization_key = monarchy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = corporative_system
+		}
+		localization_key = corporative_system
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = PRST_socialism
+		}
+		localization_key = PRST_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theocracy
+		}
+		localization_key = theocracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authoritarian_democracy
+		}
+		localization_key = authoritarian_democracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = technocracy
+		}
+		localization_key = technocracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = mysticism
+		}
+		localization_key = mysticism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theocratic_totalitarianism
+		}
+		localization_key = theocratic_totalitarianism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = militarism
+		}
+		localization_key = militarism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = nihilism
+		}
+		localization_key = nihilism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = emergency_military_government
+		}
+		localization_key = emergency_military_government
+	}
+}

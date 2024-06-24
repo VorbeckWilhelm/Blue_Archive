@@ -1,0 +1,13 @@
+state={
+	id=96
+	name="STATE_96"
+	provinces={
+		283 575 1110 1170 1270 1994 3050 3072 3080 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=GHN
+		add_core_of=GHN
+	}
+}

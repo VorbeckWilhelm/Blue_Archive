@@ -1,0 +1,13 @@
+state={
+	id=76
+	name="STATE_76"
+	provinces={
+		54 149 666 1285 1360 1445 2048 2074 2105 2285 2321 2467 2966 2977 2993 2995 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=ABD
+		add_core_of=ABD
+	}
+}

@@ -1,0 +1,87 @@
+defined_text = {
+	name = GetPlayerCountryPageOne
+	text = {
+		trigger = {
+			original_tag = ABD
+		}
+		localization_key = ABD_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = ARI
+		}
+		localization_key = ARI_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = HAA
+		}
+		localization_key = HAA_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = GHN
+		}
+		localization_key = GHN_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = GSC
+		}
+		localization_key = GSC_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = KAI
+		}
+		localization_key = KAI_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = MSC
+		}
+		localization_key = MSC_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = RWC
+		}
+		localization_key = RWC_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = SHJ
+		}
+		localization_key = SHJ_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = SMH
+		}
+		localization_key = SMH_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = TND
+		}
+		localization_key = TND_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = BLM
+		}
+		localization_key = BLM_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = SLE
+		}
+		localization_key = SLE_intro_page_1
+	}
+	text = {
+		trigger = {
+			original_tag = VLK
+		}
+		localization_key = VLK_intro_page_1
+	}
+}

@@ -1,0 +1,25 @@
+TND_student_withdrawal_crisis_decision_category = {
+	icon = x
+	picture = x
+
+	visible = {
+		NOT = {
+		or = {
+			has_country_flag = test_finished
+			has_country_flag = bukebutuixue
+		}
+	}
+		has_completed_focus = TND_A_11
+		tag = TND
+	}
+	priority = 10
+}
+TND_limited_war_paperness_decision_category = {
+	icon = x
+	picture = x
+	visible = {
+		has_completed_focus = TND_F_1
+		tag = TND
+	}
+	priority = 10
+}

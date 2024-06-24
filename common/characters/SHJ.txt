@@ -1,0 +1,15 @@
+characters = {
+	SHJ_Kisaki = {#妃咲
+		name = "SHJ_KISAKI" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHJ/Kisaki.png"
+			}
+		}
+		country_leader = {
+			ideology = corporative_system
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

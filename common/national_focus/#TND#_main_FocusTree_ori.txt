@@ -1,0 +1,989 @@
+# focus_tree = {
+# 	id = TND_Main_FocusTree
+# 	country = {
+# 		factor = 0
+# 		modifier = {
+# 			add = 10
+# 			tag = TND
+# 		}
+# 	}
+# 	continuous_focus_position = {
+# 		x = 100
+# 		y = 1500
+# 	}
+# 	default = no
+# 	#政治线第一阶段
+# 	focus = {
+# 		id = TND_A_0
+# 		icon = GFX_goal_unknown
+# 		cost = 10.00
+# 		x = 6
+# 		y = 0
+# 	}
+# 	focus = {
+# 		id = TND_A_1
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 0
+# 		y = 1
+# 		prerequisite = {
+# 			focus = TND_A_0
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_2
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 0
+# 		y = 2
+# 		prerequisite = {
+# 			focus = TND_A_1
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_3
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 0
+# 		y = 3
+# 		prerequisite = {
+# 			focus = TND_A_2
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_4
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = -2
+# 		y = 4
+# 		prerequisite = {
+# 			focus = TND_A_3
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_5
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 5.00
+# 		x = 2
+# 		y = 4
+# 		prerequisite = {
+# 			focus = TND_A_3
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_6
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = -3
+# 		y = 5
+# 		prerequisite = {
+# 			focus = TND_A_4
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_7
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = -1
+# 		y = 5
+# 		prerequisite = {
+# 			focus = TND_A_4
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_8
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 5.00
+# 		x = 2
+# 		y = 5
+# 		prerequisite = {
+# 			focus = TND_A_5
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_9
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = -2
+# 		y = 6
+# 		prerequisite = {
+# 			focus = TND_A_6
+# 		}
+# 		prerequisite = {
+# 			focus = TND_A_7
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_10
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 1
+# 		y = 6
+# 		prerequisite = {
+# 			focus = TND_A_8
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_11
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 3
+# 		y = 6
+# 		prerequisite = {
+# 			focus = TND_A_8
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_12
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = -2
+# 		y = 8
+# 		prerequisite = {
+# 			focus = TND_A_9
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_13
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 2
+# 		y = 7
+# 		prerequisite = {
+# 			focus = TND_A_10
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_14
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 2
+# 		y = 8
+# 		prerequisite = {
+# 			focus = TND_A_11
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_15
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 0
+# 		y = 9
+# 		prerequisite = {
+# 			focus = TND_A_12
+# 		}
+# 		prerequisite = {
+# 			focus = TND_A_14
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_A_16
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_A_0
+# 		cost = 10.00
+# 		x = 0
+# 		y = 10
+# 		prerequisite = {
+# 			focus = TND_A_15
+# 		}
+# 	}
+# 	#政治线第二阶段
+# 	focus = {
+# 		id = TND_B_0
+# 		icon = GFX_goal_unknown
+# 		cost = 10.00
+# 		x = 6
+# 		y = 0
+
+# 	}
+#     focus = {
+#         id = TND_B_1
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_B_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_B_0
+# 		}
+#         x = 0
+#         y = 1
+#     }
+# 	#政治线第三阶段
+# 	focus = {
+# 		id = TND_C_0
+# 		icon = GFX_goal_unknown
+# 		cost = 2.00
+# 		x = 6
+# 		y = 0
+
+# 	}
+# 	focus = {
+# 		id = TND_C_1
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 2.00
+# 		prerequisite = {
+# 			focus = TND_C_0
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_C_2
+# 			focus = TND_C_3
+# 		}
+# 		x = -3
+# 		y = 1
+
+# 	}
+# 	focus = {
+# 		id = TND_C_4
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 2.00
+# 		prerequisite = {
+# 			focus = TND_C_1
+# 		}
+# 		x = -3
+# 		y = 2
+
+# 	}
+# 	focus = {
+# 		id = TND_C_7
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 2.00
+# 		prerequisite = {
+# 			focus = TND_C_4
+# 		}
+# 		x = -3
+# 		y = 3
+
+# 	}
+# 	focus = {
+# 		id = TND_C_10
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_7
+# 		}
+# 		x = -3
+# 		y = 4
+
+# 	}
+# 	focus = {
+# 		id = TND_C_13
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_10
+# 		}
+# 		x = -3
+# 		y = 5
+
+# 	}
+# 	focus = {
+# 		id = TND_C_16
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_13
+# 		}
+# 		x = -3
+# 		y = 6
+
+# 	}
+# 	focus = {
+# 		id = TND_C_19
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_16
+# 		}
+# 		x = -3
+# 		y = 7
+
+# 	}
+# 	focus = {
+# 		id = TND_C_2
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_0
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_C_1
+# 			focus = TND_C_3
+# 		}
+# 		x = 0
+# 		y = 1
+
+# 	}
+# 	focus = {
+# 		id = TND_C_5
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_2
+# 		}
+# 		x = 0
+# 		y = 2
+
+# 	}
+# 	focus = {
+# 		id = TND_C_8
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_5
+# 		}
+# 		x = 0
+# 		y = 3
+
+# 	}
+# 	focus = {
+# 		id = TND_C_11
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_8
+# 		}
+# 		x = 0
+# 		y = 4
+
+# 	}
+# 	focus = {
+# 		id = TND_C_14
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_11
+# 		}
+# 		x = 0
+# 		y = 5
+
+# 	}
+# 	focus = {
+# 		id = TND_C_17
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_14
+# 		}
+# 		x = 0
+# 		y = 6
+
+# 	}
+# 	focus = {
+# 		id = TND_C_20
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_17
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_C_21
+# 		}
+# 		x = -1
+# 		y = 7
+
+# 	}
+# 	focus = {
+# 		id = TND_C_21
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_17
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_C_20
+# 		}
+# 		x = 1
+# 		y = 7
+
+# 	}
+# 	focus = {
+# 		id = TND_C_22
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_20
+# 			focus = TND_C_21
+# 		}
+# 		x = 0
+# 		y = 8
+
+# 	}
+# 	focus = {
+# 		id = TND_C_3
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_0
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_C_2
+# 			focus = TND_C_1
+# 		}
+# 		x = 3
+# 		y = 1
+
+# 	}
+# 	focus = {
+# 		id = TND_C_6
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_3
+# 		}
+# 		x = 3
+# 		y = 2
+
+# 	}
+# 	focus = {
+# 		id = TND_C_9
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_6
+# 		}
+# 		x = 3
+# 		y = 3
+
+# 	}
+# 	focus = {
+# 		id = TND_C_12
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_9
+# 		}
+# 		x = 3
+# 		y = 4
+
+# 	}
+# 	focus = {
+# 		id = TND_C_15
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_12
+# 		}
+# 		x = 3
+# 		y = 5
+
+# 	}
+# 	focus = {
+# 		id = TND_C_18
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_15
+# 		}
+# 		x = 3
+# 		y = 6
+
+# 	}
+# 	focus = {
+# 		id = TND_C_23
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_C_0
+# 		cost = 10.00
+# 		prerequisite = {
+# 			focus = TND_C_22
+# 		}
+# 		x = 0
+# 		y = 9
+
+# 	}
+# 	#政治线第三阶段
+# 	focus = {
+# 		id = TND_D_0
+# 		icon = GFX_goal_unknown
+# 		cost = 10.00
+# 		x = 6
+# 		y = 0
+
+# 	}
+#     focus = {
+#         id = TND_D_1
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_0
+# 		}
+#         x = 0
+#         y = 1
+#     }
+# 	focus = {
+#         id = TND_D_2
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_1
+# 		}
+#         x = 0
+#         y = 2
+#     }
+# 	focus = {
+#         id = TND_D_3
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_2
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_D_4
+# 		}
+#         x = -1
+#         y = 3
+#     }
+# 	focus = {
+#         id = TND_D_4
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_2
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_D_3
+# 		}
+#         x = 1
+#         y = 3
+#     }
+# 	focus = {
+#         id = TND_D_5
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_3
+# 		}
+#         x = -1
+#         y = 4
+#     }
+# 	focus = {
+#         id = TND_D_6
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_4
+# 		}
+#         x = 1
+#         y = 4
+#     }
+# 	focus = {
+#         id = TND_D_7
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_5
+# 		}
+#         x = -1
+#         y = 5
+#     }
+# 	focus = {
+#         id = TND_D_8
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_6
+# 		}
+#         x = 1
+#         y = 5
+#     }
+# 	focus = {
+#         id = TND_D_9
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_7
+# 		}
+#         x = -1
+#         y = 6
+#     }
+# 	focus = {
+#         id = TND_D_10
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_8
+# 		}
+#         x = 1
+#         y = 6
+#     }
+# 	focus = {
+#         id = TND_D_11
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_10
+# 		}
+#         x = 1
+#         y = 7
+#     }
+# 	focus = {
+#         id = TND_D_12
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_D_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_D_9
+# 		}
+# 		prerequisite = {
+# 			focus = TND_D_11
+# 		}
+#         x = -1
+#         y = 8
+#     }
+# 	#政治线第四阶段
+# 	focus = {
+# 		id = TND_E_0
+# 		icon = GFX_goal_unknown
+# 		cost = 10.00
+# 		x = 6
+# 		y = 0
+# 		mutually_exclusive = {
+# 			focus = TND_E_1
+# 		}
+# 	}
+#     focus = {
+#         id = TND_E_1
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_E_0
+#         cost = 10
+#        mutually_exclusive = {
+# 		focus = TND_E_0
+# 	   }
+#         x = 2
+#         y = 0
+#     }
+# 	focus = {
+#         id = TND_E_2
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_E_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_E_0
+# 			focus = TND_E_1
+# 		}
+#         x = 1
+#         y = 1
+#     }
+# 	#政治线第五阶段
+# 	focus = {
+# 		id = TND_F_0
+# 		icon = GFX_goal_unknown
+# 		cost = 10.00
+# 		x = 6
+# 		y = 0
+
+# 	}
+#     focus = {
+#         id = TND_F_1
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_F_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_F_0
+# 		}
+#         x = 0
+#         y = 1
+#     }
+# 	#政治线第六阶段
+# 	focus = {
+# 		id = TND_G_0
+# 		icon = GFX_goal_unknown
+# 		cost = 10.00
+# 		x = 6
+# 		y = 0
+
+# 	}
+#     focus = {
+#         id = TND_G_1
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_G_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_G_0
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_G_2
+# 		}
+#         x = -2
+#         y = 1
+#     }
+# 	focus = {
+#         id = TND_G_2
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_G_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_G_0
+# 		}
+# 		mutually_exclusive = {
+# 			focus = TND_G_1
+# 		}
+#         x = 2
+#         y = 1
+#     }
+# 	focus = {
+#         id = TND_G_3
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_G_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_G_1
+# 			focus = TND_G_2
+# 		}
+#         x = 0
+#         y = 2
+#     }
+# 	focus = {
+#         id = TND_G_4
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_G_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_G_3
+# 		}
+#         x = 0
+#         y = 3
+#     }
+# 	focus = {
+#         id = TND_G_5
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_G_0
+#         cost = 10
+#         prerequisite = {
+# 			focus = TND_G_4
+# 		}
+#         x = 0
+#         y = 4
+#     }
+# 	#工业科技线
+# 	focus = {
+# 		id = TND_IT_0
+# 		icon = GFX_goal_unknown
+# 		cost = 10.00
+# 		x = 18
+# 		y = 0
+# 	}
+#     focus = {
+#         id = TND_IT_1
+#         icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+#         cost = 10
+#         x = 2
+#         y = 0
+#     }
+# 	focus = {
+# 		id = TND_IT_2
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 4
+# 		y = 0
+# 	}
+# 	focus = {
+# 		id = TND_IT_3
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 6
+# 		y = 0
+# 	}
+# 	focus = {
+# 		id = TND_IT_4
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = -1
+# 		y = 1
+# 		prerequisite = {
+# 			focus = TND_IT_0
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_1
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_5
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 1
+# 		y = 1
+# 		prerequisite = {
+# 			focus = TND_IT_0
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_1
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_6
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 3
+# 		y = 1
+# 		prerequisite = {
+# 			focus = TND_IT_0
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_1
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_7
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 5
+# 		y = 1
+# 		prerequisite = {
+# 			focus = TND_IT_2
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_3
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_8
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 1
+# 		y = 2
+# 		prerequisite = {
+# 			focus = TND_IT_4
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_5
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_6
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_9
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 5
+# 		y = 2
+# 		prerequisite = {
+# 			focus = TND_IT_7
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_10
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 1
+# 		y = 3
+# 		prerequisite = {
+# 			focus = TND_IT_8
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_11
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 3
+# 		y = 3
+# 	}
+# 	focus = {
+# 		id = TND_IT_12
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 5
+# 		y = 3
+# 		prerequisite = {
+# 			focus = TND_IT_9
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_13
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 3
+# 		y = 4
+# 		prerequisite = {
+# 			focus = TND_IT_10
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_11
+# 		}
+# 		prerequisite = {
+# 			focus = TND_IT_12
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_14
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 3
+# 		y = 5
+# 		prerequisite = {
+# 			focus = TND_IT_13
+# 		}
+# 	}
+# 	focus = {
+# 		id = TND_IT_15
+# 		icon = GFX_goal_unknown
+# 		relative_position_id = TND_IT_0
+# 		cost = 10.00
+# 		x = 3
+# 		y = 6
+# 		prerequisite = {
+# 			focus = TND_IT_14
+# 		}
+# 	}
+# }

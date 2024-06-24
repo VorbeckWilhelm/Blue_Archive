@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_pandemonium_bop
+		textureFile = "gfx/bop_icons/bop_pandemonium.png"
+	}
+	spriteType = {
+		name = GFX_disciplinary_bop
+		textureFile = "gfx/bop_icons/bop_disciplinary.png"
+	}
+} 

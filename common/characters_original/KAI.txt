@@ -1,0 +1,15 @@
+characters = {
+	KAI_kpmcp = {
+		name = "KAI_KPMCP" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KAI/kaiserpmc.png"
+			}
+		}
+		country_leader = {
+			ideology = corporative_system
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

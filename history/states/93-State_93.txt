@@ -1,0 +1,13 @@
+state={
+	id=93
+	name="STATE_93"
+	provinces={
+		257 442 531 548 673 763 1069 1093 1144 1279 1462 1527 1637 1672 1809 1963 2234 2463 2980 3011 3070 3086 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=ABD
+		add_core_of=ABD
+	}
+}

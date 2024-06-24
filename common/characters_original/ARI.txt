@@ -1,0 +1,15 @@
+characters = {
+	ARI_beatrice = {
+		name = "ARI_BEATRICE" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARI/beatrice.png"
+			}
+		}
+		country_leader = {
+			ideology = nihilism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

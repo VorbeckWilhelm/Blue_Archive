@@ -1,0 +1,13 @@
+state={
+	id=43
+	name="STATE_43"
+	provinces={
+		237 327 361 389 417 961 994 1082 1148 1701 1790 1828 2201 2379 2398 2707 2716 2741 2767 2791 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=TND
+		add_core_of=TND
+	}
+}

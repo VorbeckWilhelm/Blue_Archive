@@ -1,0 +1,14 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		201 209 230 246 1820 2687 2688 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=ARI
+		add_core_of=ARI
+		add_core_of=TND
+	}
+}

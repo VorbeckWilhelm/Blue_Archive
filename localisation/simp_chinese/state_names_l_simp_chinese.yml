@@ -1,0 +1,160 @@
+﻿l_simp_chinese:
+ STATE_1: "北角" #
+ STATE_2: "拉齐奥"
+ STATE_3: "瑞士高原"
+ STATE_4: "下奥地利"
+ STATE_5: "埃姆兰-马祖伦"
+ STATE_6: "佛兰德"
+ STATE_7: "荷兰"
+ STATE_8: "卢森堡"
+ STATE_9: "波希米亚"
+ STATE_10: "华沙"
+ STATE_11: "考纳斯"
+ STATE_12: "维泽梅"
+ STATE_13: "佩尔努"
+ STATE_14: "布列塔尼"
+ STATE_15: "诺曼底"
+ STATE_16: "法兰西岛"
+ STATE_17: "弗朗什-孔泰"
+ STATE_18: "香槟"
+ STATE_19: "华纳海姆" #
+ STATE_20: "罗讷"
+ STATE_21: "尼福尔海姆" #
+ STATE_22: "朗格多克"
+ STATE_23: "密米尔" #
+ STATE_24: "中央大区"
+ STATE_25: "沃尔德" #
+ STATE_26: "奥弗涅"
+ STATE_27: "勃艮第"
+ STATE_28: "坎布雷" #
+ STATE_29: "北部-加莱海峡"
+ STATE_30: "卢瓦尔"
+ STATE_31: "卡斯蒂利亚" #
+ STATE_32: "阿利乌" #
+ STATE_33: "中南大区"
+ STATE_34: "瓦隆"
+ STATE_35: "墨顿" #
+ STATE_36: "波希米亚" #
+ STATE_37: "哲尔曼" #
+ STATE_38: "彼得豪斯" #
+ STATE_39: "上阿迪杰"
+ STATE_40: "阿尔泰边疆区"
+ STATE_41: "塔姆特瓦" #
+ STATE_42: "摩泽兰"
+ STATE_43: "维斯瓦" #
+ STATE_44: "阿尔巴尼亚"
+ STATE_45: "阿维斯特拉" #
+ STATE_46: "伊夫林" #
+ STATE_47: "伦巴第" #
+ STATE_48: "博洛尼亚" #
+ STATE_49: "安卡拉"
+ STATE_50: "符腾堡"
+ STATE_51: "莱茵兰"
+ STATE_52: "下巴伐利亚" 
+ STATE_53: "联邦联合执政区" #
+ STATE_54: "彼埃尔" #
+ STATE_55: "黑森"
+ STATE_56: "D.U.白鸟区" #
+ STATE_57: "联邦C区" #
+ STATE_58: "透特" #
+ STATE_59: "贝宁" #
+ STATE_60: "拉齐奥" #
+ STATE_61: "古圣堂区" #
+ STATE_62: "克罗斯" #
+ STATE_63: "后波美拉尼亚"
+ STATE_64: "勃兰登堡"
+ STATE_65: "联邦E区" #
+ STATE_66: "下西里西亚"
+ STATE_67: "联邦D区" #
+ STATE_68: "奥斯特马克"
+ STATE_69: "费赞" #
+ STATE_70: "库马"
+ STATE_71: "东斯洛伐克"
+ STATE_72: "阿哈加尔" #
+ STATE_73: "喀尔巴阡鲁塞尼亚"
+ STATE_74: "克努姆" #
+ STATE_75: "摩拉维亚"
+ STATE_76: "达喀尔" #
+ STATE_77: "多布罗加"
+ STATE_78: "比萨拉比亚"
+ STATE_79: "摩尔多瓦"
+ STATE_80: "布科维纳"
+ STATE_81: "弗罗茨瓦夫" #
+ STATE_82: "巴纳特"
+ STATE_83: "克里沙那"
+ STATE_84: "尼赫布特" #
+ STATE_85: "塞姆那" #
+ STATE_86: "拿撒勒" #
+ STATE_87: "维罗纳亚" #
+ STATE_88: "廷巴克图" #
+ STATE_89: "斯坦尼斯瓦沃夫"
+ STATE_90: "斯特拉斯堡" #
+ STATE_91: "利沃夫"
+ STATE_92: "卢布林"
+ STATE_93: "底比斯" #
+ STATE_94: "波莱谢"
+ STATE_95: "新格鲁多克"
+ STATE_96: "查贝伦" #
+ STATE_97: "凯撒第51区" #
+ STATE_98: "新天鹅堡" #
+ STATE_99: "阿拜多斯" #
+ STATE_100: "德雷斯顿" #
+ STATE_101: "格陵兰"
+ STATE_102: "斯图加特" #
+ STATE_103: "达尔马提亚"
+ STATE_104: "弗朗克夫" #
+ STATE_105: "温泉堡" #
+ STATE_106: "马其顿"
+ STATE_107: "塞尔维亚"
+ STATE_108: "摩拉瓦"
+ STATE_109: "克罗地亚"
+ STATE_110: "奥斯陆峡湾"
+ STATE_111: "新地"
+ STATE_112: "里斯本"
+ STATE_113: "伦斯特"
+ STATE_114: "阿克苏姆" #
+ STATE_115: "西西里"
+ STATE_116: "贝鲁特" #
+ STATE_117: "坎帕尼亚"
+ STATE_118: "直布罗陀"
+ STATE_119: "乌加里特" #
+ STATE_120: "苏格兰高地"
+ STATE_121: "洛锡安"
+ STATE_122: "托勒密" #
+ STATE_123: "西南英格兰"
+ STATE_124: "孟斐斯" #
+ STATE_125: "佩特拉" #
+ STATE_126: "大伦敦区"
+ STATE_127: "阿多尼斯" #
+ STATE_128: "西米德兰兹"
+ STATE_129: "东米德兰兹"
+ STATE_130: "约克"
+ STATE_131: "巴拉达" #
+ STATE_132: "希力奥波里" #
+ STATE_133: "拉纳克"
+ STATE_134: "所罗门" #
+ STATE_135: "达卡利亚" #
+ STATE_136: "阿伯丁"
+ STATE_137: "克里米亚"
+ STATE_138: "斯科讷"
+ STATE_139: "洛林" #
+ STATE_140: "西约特兰"
+ STATE_141: "格赫那" #
+ STATE_142: "西挪威"
+ STATE_143: "特伦德拉格"
+ STATE_144: "诺德兰"
+ STATE_145: "尼德兰" #
+ STATE_146: "奥斯特里亚" #
+ STATE_147: "萨拉"
+ STATE_148: "雷蒙盖顿" #
+ STATE_149: "瓦萨"
+ STATE_150: "库奥皮奥"
+ STATE_151: "尼伯龙根" #
+ STATE_152: "勃兰登" #
+ STATE_153: "蒂罗尔"
+ STATE_154: "挪得" #
+ STATE_155: "迪勒蒙" #
+ STATE_156: "汉萨" #
+ STATE_157: "阿布鲁佐"
+ STATE_158: "皮埃蒙特"
+ STATE_159: "特利斯墨吉斯忒斯" #

@@ -1,0 +1,13 @@
+state={
+	id=111
+	name="STATE_111"
+	provinces={
+		299 304 416 759 1100 1699 1862 3116 3152 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=HAA
+		add_core_of=HAA
+	}
+}

@@ -1,0 +1,15 @@
+characters = {
+	THM_rabu = {
+		name = "Rabu" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/THM/rabu.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

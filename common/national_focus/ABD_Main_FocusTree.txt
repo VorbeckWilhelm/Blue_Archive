@@ -1,0 +1,506 @@
+focus_tree = {
+	id = ABD_Main_FocusTree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ABD
+		}
+	}
+	default = no
+	#政治线第一段
+	focus = {
+		id = ABD_A_0
+		allow_branch = {
+			NOT = {
+				  has_completed_focus = ABD_A_6
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = ABD_A_1
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_A_0
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ABD_A_0
+		}
+	}
+	focus = {
+		id = ABD_A_2
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_A_0
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ABD_A_1
+		}
+		completion_reward = {
+			country_event = {id = ABD.1 days = 1}
+		}
+}
+	focus = {
+		id = ABD_A_3
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_A_0
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = ABD_A_2
+		}
+	}
+	focus = {
+		id = ABD_A_4
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_A_0
+		cost = 10
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = ABD_A_3
+		}
+	}
+	focus = {
+		id = ABD_A_5
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_A_0
+		cost = 10
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = ABD_A_4
+		}
+		completion_reward = {
+			country_event = {id = ABD.2 days = 1}
+		}
+	}
+	focus = {
+		id = ABD_A_6
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_A_0
+		cost = 10
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = ABD_A_5
+		}
+		completion_reward = {
+			country_event = {id = ABD.6 days = 1}
+		}
+	}
+	#政治线第二段
+	focus = {
+		id = ABD_B_0
+		allow_branch = {
+			has_completed_focus = ABD_A_6
+			NOT = {
+				has_completed_focus = ABD_B_5
+			}
+			}
+		
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = ABD_B_1
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_B_0
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ABD_B_0
+		}
+	}
+	focus = {
+		id = ABD_B_2
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_B_0
+		cost = 10
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = ABD_B_1
+		}
+	}
+	focus = {
+		id = ABD_B_3
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_B_0
+		cost = 10
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = ABD_B_1
+		}
+	}
+	focus = {
+		id = ABD_B_4
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_B_0
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = ABD_B_2
+		}
+		prerequisite = {
+			focus = ABD_B_3
+		}
+		completion_reward = {
+			country_event = {id = ABD.7 days = 1}
+		}
+	}
+	focus = {
+		id = ABD_B_5
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_B_0
+		cost = 10
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = ABD_B_4
+		}
+		completion_reward = {
+			country_event = {id = ABD.8 days = 1}
+		}
+	}
+	#政治线第三段
+	focus = {
+		id = ABD_C_0
+		allow_branch = {
+			has_completed_focus = ABD_B_5
+			NOT = {
+				has_completed_focus = ABD_C_4
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = ABD_C_1
+		allow_branch = {
+			has_completed_focus = ABD_B_5
+			NOT = {
+				has_completed_focus = ABD_C_4
+			}
+		}
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_C_0
+		cost = 10
+		x = 2
+		y = 0
+	}
+	focus = {
+		id = ABD_C_2
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_C_0
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ABD_C_0
+		}
+		prerequisite = {
+			focus = ABD_C_1
+		}
+	}
+	focus = {
+		id = ABD_C_3
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_C_0
+		cost = 10
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = ABD_C_2
+		}
+	}
+	focus = {
+		id = ABD_C_4
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_C_0
+		cost = 10
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = ABD_C_3
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	#政治线第四段
+	focus = {
+		id = ABD_D_0
+		allow_branch = {
+			has_completed_focus = ABD_C_4
+			NOT = {
+				has_completed_focus = ABD_D_6
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		completion_reward = {
+			country_event = {id = ABD.9 days = 1}
+		}
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = ABD_D_1
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_D_0
+		mutually_exclusive = {
+			focus = ABD_D_2
+		}
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = ABD_D_0
+		}
+	}
+	focus = {
+		id = ABD_D_2
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_D_0
+		mutually_exclusive = {
+			focus = ABD_D_1
+		}
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = ABD_D_0
+		}
+		completion_reward = {
+			country_event = {id = ABD.10 days = 1}
+		}
+	}
+	focus = {
+		id = ABD_D_3
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_D_0
+		cost = 10
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = ABD_D_2
+		}
+	}
+	focus = {
+		id = ABD_D_4
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_D_0
+		cost = 10
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = ABD_D_3
+		}
+	}
+	focus = {
+		id = ABD_D_5
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_D_0
+		cost = 10
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = ABD_D_4
+		}
+		completion_reward = {
+			country_event = {id = ABD.11 days = 1}
+		}
+	}
+	focus = {
+		id = ABD_D_6
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_D_0
+		cost = 10
+		x = 2
+		y = 5
+		prerequisite = {
+			focus = ABD_D_5
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	#政治线第五段
+	focus = {
+		id = ABD_E_0
+		allow_branch = {
+			has_completed_focus = ABD_D_6
+			NOT = {
+				has_completed_focus = ABD_E_3
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = ABD_E_1
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_E_0
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ABD_E_0
+		}
+	}
+	focus = {
+		id = ABD_E_2
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_E_0
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ABD_E_1
+		}
+	}
+	focus = {
+		id = ABD_E_3
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_E_0
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = ABD_E_2
+		}
+		completion_reward = {
+			country_event = {id = ABD.13 days = 1}
+		}
+	}
+	#政治线第六段国策
+	focus = {
+		id = ABD_F_0
+		allow_branch = {
+			has_completed_focus = ABD_E_3
+			NOT = {
+				has_country_flag = hoshino_missing
+			}
+		}
+		available = {
+			always = no
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = ABD_F_1
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_F_0
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = ABD_F_0
+		}
+	}
+	focus = {
+		id = ABD_F_2
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_F_0
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = ABD_F_0
+		}
+	}
+	focus = {
+		id = ABD_F_3
+		available = {
+			NOT = {
+				has_country_flag = hoshino_missing
+			}
+		}
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_F_0
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ABD_F_1
+		}
+		prerequisite = {
+			focus = ABD_F_2
+		}
+	}
+	#政治线第七阶段
+	focus = {
+		id = ABD_G_0
+		allow_branch = {
+			has_country_flag = hoshino_missing
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = ABD_G_1
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_G_0
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ABD_G_0
+		}
+	}
+	focus = {
+		id = ABD_G_2
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_G_0
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ABD_G_1
+		}
+	}
+	focus = {
+		id = ABD_G_3
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_G_0
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = ABD_G_2
+		}
+	}
+	focus = {
+		id = ABD_G_4
+		icon = GFX_goal_unknown
+		relative_position_id = ABD_G_0
+		cost = 10
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = ABD_G_3
+		}
+	}
+}

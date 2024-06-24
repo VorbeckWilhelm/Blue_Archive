@@ -1,0 +1,13 @@
+state={
+	id=56
+	name="STATE_56"
+	provinces={
+		65 473 578 654 878 1176 1332 1363 1552 1611 1704 1869 1883 2540 2829 2860 2875 2878 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=GSC
+		add_core_of=GSC
+	}
+}

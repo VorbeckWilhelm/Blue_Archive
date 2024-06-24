@@ -1,0 +1,18 @@
+spriteTypes={
+	spriteType = {
+		name = "GFX_country_intro_window_background"
+		textureFile = "gfx/interface/intro_window.dds"
+	}
+	spriteType = {
+		name = "GFX_country_intro_close_button"
+		textureFile = "gfx/interface/button_close.dds"
+	}
+	spriteType = {
+		name = "GFX_country_intro_image"
+		textureFile = "gfx/interface/intro_image.png"
+	}
+	spriteType = {
+		name = "GFX_country_intro_sector_button"
+		textureFile = "gfx/interface/button_sectors.dds"
+	}
+}

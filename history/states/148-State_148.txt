@@ -1,0 +1,13 @@
+state={
+	id=148
+	name="STATE_148"
+	provinces={
+		37 218 710 821 2106 2418 2507 2575 3309 3310 3312 3346 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=GHN
+		add_core_of=GHN
+	}
+}

@@ -1,0 +1,13 @@
+state={
+	id=21
+	name="STATE_21"
+	provinces={
+		392 842 873 1347 2003 2158 2235 2407 2591 2605 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=VLK
+		add_core_of=VLK
+	}
+}

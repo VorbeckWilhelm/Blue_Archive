@@ -1,0 +1,13 @@
+state={
+	id=82
+	name="STATE_82"
+	provinces={
+		579 693 1239 1271 1472 1668 1742 2301 2462 2969 2981 2987 3018 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=RWC
+		add_core_of=RWC
+	}
+}

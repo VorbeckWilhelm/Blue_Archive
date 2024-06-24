@@ -1,0 +1,13 @@
+state={
+	id=55
+	name="STATE_55"
+	provinces={
+		8 88 472 612 697 750 944 1073 1175 1187 1209 1306 1647 1714 1788 1912 1957 1982 2316 2400 2453 2826 2844 2857 2886 2894 2902 2913 2921 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=RWC
+		add_core_of=RWC
+	}
+}

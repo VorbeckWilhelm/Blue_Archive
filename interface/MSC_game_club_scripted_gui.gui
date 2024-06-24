@@ -1,0 +1,19 @@
+guiTypes = {
+	containerWindowType = {
+		name = "game_club_compliance_ui_window"
+		position = { x = 300 y = 100 }
+		size = { width = 200 height= 210 }
+		background = {
+			name = "Background" 
+			quadTextureSprite = "GFX_decision_game_club_compliance50"
+		}
+
+	}
+	iconType = {#图片窗口，无效果
+			name = "game_club_compliance50"
+			spriteType = "GFX_decision_game_club_compliance50"		
+			position = { x = 100  y = 10 }#你的图片位置（相对于窗口）
+			pdx_tooltip = "拓展描述，起名后在本地化写"
+		}
+
+}

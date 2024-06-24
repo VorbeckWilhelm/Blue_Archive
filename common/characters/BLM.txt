@@ -1,0 +1,15 @@
+characters = {
+	BLM_blackmarket = {#黑市
+		name = "BLM_BLACKMARKET" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLM/blackmarket.png"
+			}
+		}
+		country_leader = {
+			ideology = corporative_system
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

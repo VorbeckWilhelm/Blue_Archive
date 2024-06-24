@@ -1,0 +1,13 @@
+state={
+	id=71
+	name="STATE_71"
+	provinces={
+		133 504 1190 1390 1466 1893 1932 2004 2269 2877 2884 2907 2924 2925 2935 2956 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=MSC
+		add_core_of=MSC
+	}
+}

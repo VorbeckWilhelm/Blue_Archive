@@ -1,0 +1,10 @@
+ABD_bank_robbery_decision_category = {
+	icon = x
+	picture = GFX_decision_robbery
+
+	visible = {
+		original_tag = ABD
+		has_completed_focus = ABD_E_3
+	}
+	priority = 10
+}

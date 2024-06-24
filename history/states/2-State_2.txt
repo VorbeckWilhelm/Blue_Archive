@@ -1,0 +1,13 @@
+state={
+	id=2
+	name="STATE_2"
+	provinces={
+		356 636 1171 1220 1265 1416 1615 1689 2147 2228 2425 2669 2671 2683 2703 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=RWC
+		add_core_of=RWC
+	}
+}

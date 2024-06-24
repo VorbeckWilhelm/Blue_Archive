@@ -1,0 +1,15 @@
+characters = {
+	SMH_Blacksuit = {#黑皮蛋
+		name = "SMH_BLACKSUIT" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SMH/Blacksuit.png"
+			}
+		}
+		country_leader = {
+			ideology = mysticism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

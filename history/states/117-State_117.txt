@@ -1,0 +1,13 @@
+state={
+	id=117
+	name="STATE_117"
+	provinces={
+		152 167 402 543 601 686 912 1202 1289 1503 1591 1762 1822 2028 2399 2475 3097 3121 3147 3155 3165 3166 3175 3182 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=SHJ
+		add_core_of=SHJ
+	}
+}

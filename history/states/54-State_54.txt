@@ -1,0 +1,13 @@
+state={
+	id=54
+	name="STATE_54"
+	provinces={
+		85 565 808 809 1016 1061 1206 1482 1925 1978 2189 2314 2830 2832 2848 2850 2874 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=TND
+		add_core_of=TND
+	}
+}

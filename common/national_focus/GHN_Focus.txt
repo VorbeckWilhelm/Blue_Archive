@@ -1,0 +1,506 @@
+focus_tree = {
+	id = GHN_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GHN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 100 y = 1000 }
+	focus = {
+		id = GHN_A_01
+		icon = GFX_goal_unknown
+		x = 5
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 100
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = GHN_A_10
+				has_country_flag = GHN_02_event_activate
+			}
+		}
+	}
+	focus = {
+		id = GHN_A_02
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = { focus = GHN_A_01 } 
+		completion_reward = {
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = GHN_A_03
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 1
+		prerequisite = { focus = GHN_A_01 } 
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = GHN_A_04
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 2
+		prerequisite = { focus = GHN_A_02 } 
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = -0.1
+			}
+		}
+	}
+	focus = {
+		id = GHN_A_05
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 2
+		prerequisite = { focus = GHN_A_02 } 
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 70
+		}
+	}
+	focus = {
+		id = GHN_A_06
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 7
+		y = 2
+		prerequisite = { focus = GHN_A_03 } 
+		completion_reward = {
+			add_stability = 0.1
+			# remove_ideas = 
+		}
+	}
+	focus = {
+		id = GHN_A_07
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 9
+		y = 2
+		prerequisite = { focus = GHN_A_03 } 
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = GHN_A_08
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 3
+		prerequisite = { focus = GHN_A_04 } 
+		prerequisite = { focus = GHN_A_05 } 
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = GHN_A_09
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 3
+		prerequisite = { focus = GHN_A_06 } 
+		prerequisite = { focus = GHN_A_07 }
+		completion_reward = {}
+	}
+	focus = {
+		id = GHN_A_10
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 5
+		y = 4
+		prerequisite = { focus = GHN_A_08 } 
+		prerequisite = { focus = GHN_A_09 }
+		completion_reward = {
+			# mark_focus_tree_layout_dirty = yes
+			country_event = {
+				id = GHN.01
+				days = 14
+			}
+		}
+	}
+	focus = {
+		id = GHN_A_11
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = { focus = GHN_A_04 } 
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GHN_A_12
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 4
+		prerequisite = { focus = GHN_A_11 } 
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GHN_A_13
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 5
+		prerequisite = { focus = GHN_A_12 } 
+		completion_reward = {
+			add_political_power = 60
+		}
+	}
+	###B_PART###
+	focus = {
+		id = GHN_B_01
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 5
+		y = 0
+		completion_reward = {
+			set_politics = {
+				ruling_party = authoritarian
+			}
+			add_popularity = {
+				ideology = authoritarian
+				popularity = 0.6
+			}
+		}
+		allow_branch = {
+			has_completed_focus = GHN_A_10
+			has_country_flag = GHN_B_part_activate
+		}
+	}
+	focus = {
+		id = GHN_B_02
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 5
+		y = 1
+		completion_reward = {
+			add_war_support = 0.5
+			add_manpower = 10000
+		}
+		prerequisite = { focus = GHN_B_01 }
+	}
+	focus = {
+		id = GHN_B_03
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 2
+		completion_reward = {
+			add_manpower = 5000
+		}
+		prerequisite = { focus = GHN_B_02 }
+	}
+	focus = {
+		id = GHN_B_04
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 2
+		completion_reward = {
+			add_stability = 0.3
+			#set army in states, still not written
+		}
+		prerequisite = { focus = GHN_B_02 }
+	}
+	focus = {
+		id = GHN_B_05
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 4
+		completion_reward = {
+			add_manpower = 100
+			add_stability = 0.2
+		}
+		prerequisite = { focus = GHN_B_03 }
+	}
+	focus = {
+		id = GHN_B_06
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 5
+		completion_reward = {
+			add_manpower = 1000
+		}
+		prerequisite = { focus = GHN_B_05 }
+	}
+	focus = {
+		id = GHN_B_07
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 3
+		completion_reward = {
+			add_war_support = 0.2
+			add_command_power = 100
+		}
+		prerequisite = { focus = GHN_B_04 }
+	}
+	focus = {
+		id = GHN_B_08
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 4
+		completion_reward = {
+			add_war_support = 0.2
+		}
+		prerequisite = { focus = GHN_B_07 }
+	}
+	focus = {
+		id = GHN_B_09
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 5
+		completion_reward = { }
+		prerequisite = { focus = GHN_B_08 }
+	}
+	###INDUSTRY###
+	focus = {
+		id = GHN_IND_01
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 15
+		y = 0
+		completion_reward = { }
+	}
+	focus = {
+		id = GHN_IND_02
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 13
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_01
+		}
+	}
+	focus = {
+		id = GHN_IND_03
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 11
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_02
+		}
+	}
+	focus = {
+		id = GHN_IND_04
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 13
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_02
+		}
+	}
+	focus = {
+		id = GHN_IND_05
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 15
+		y = 3
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_01
+		}
+		mutually_exclusive = {
+			focus = GHN_IND_08
+		}
+	}
+	focus = {
+		id = GHN_IND_06
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 17
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_01
+		}
+	}
+	focus = {
+		id = GHN_IND_07
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 17
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_06
+		}
+	}
+	focus = {
+		id = GHN_IND_08
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 17
+		y = 3
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_07
+		}
+		mutually_exclusive = {
+			focus = GHN_IND_05
+		}
+	}
+	focus = {
+		id = GHN_IND_09
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 19
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_06
+		}
+	}
+	focus = {
+		id = GHN_IND_10
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 19
+		y = 3
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_IND_09
+		}
+	}
+	###AIR_FORCE###
+	focus = {
+		id = GHN_AF_01
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 22
+		y = 0
+		completion_reward = { }
+	}
+	focus = {
+		id = GHN_AF_02
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 21
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_AF_01
+		}
+		mutually_exclusive = {
+			focus = GHN_AF_03
+		}
+	}
+	focus = {
+		id = GHN_AF_03
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 23
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_AF_01
+		}
+		mutually_exclusive = {
+			focus = GHN_AF_02
+		}
+	}
+	focus = {
+		id = GHN_AF_04
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 22
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_AF_02
+			focus = GHN_AF_03
+		}
+	}
+	focus = {
+		id = GHN_AF_05
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 21
+		y = 4
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_AF_02
+			focus = GHN_AF_03
+		}
+	}
+	focus = {
+		id = GHN_AF_06
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 23
+		y = 4
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_AF_02
+			focus = GHN_AF_03
+		}
+	}
+	###INFANTRY###
+	focus = {
+		id = GHN_INF_01
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 25
+		y = 0
+		completion_reward = { }
+	}
+	focus = {
+		id = GHN_INF_02
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 25
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_INF_01
+		}
+	}
+	focus = {
+		id = GHN_INF_03
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 25
+		y = 4
+		completion_reward = { }
+		prerequisite = {
+			focus = GHN_INF_02
+		}
+	}
+}

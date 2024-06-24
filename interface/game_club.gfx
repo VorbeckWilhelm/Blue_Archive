@@ -1,0 +1,43 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_decision_game_club_sealing"
+		texturefile = "gfx/interface/game_club/sealing.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_game_club_unsealing"
+		texturefile = "gfx/interface/game_club/unsealing.dds"
+	}
+	#spriteType = {
+	#	name = "GFX_decision_game_club_background"
+	#	textureFile = "gfx/interface/game_club/game_club_background.dds"
+	#}
+	#spriteType = {
+	#	name = "GFX_decision_game_club_loading_bar"
+	#	textureFile = "gfx/interface/game_club/loading_bar.dds"
+	#}
+	#progressbartype = {
+	#	name = "GFX_decision_game_club_loading_bar"
+	#	color = {1.0 1.0 1.0}
+	#	colortwo = {1.0 1.0 1.0}
+	#	textureFile1 = "gfx/interface/game_club/loading_bar.dds"
+	#	textureFile2 = "gfx/interface/game_club/game_club_empty_bar.dds"
+	#	size = {x = 200 y = 70 }
+	#	horizontal = yes
+	#}
+
+	spriteType = {
+		name = "GFX_decision_game_club_background"
+		textureFile = "gfx/interface/occupation/collaboration_bar_large_bg.dds"
+	}
+	progressbartype = {
+		name = "GFX_decision_game_club_loading_bar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/occupation/collaboration_bar_large.dds"
+		textureFile2 = "gfx/interface/occupation/large_bar_empty.dds"
+		size = { x = 249 y = 21 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+}

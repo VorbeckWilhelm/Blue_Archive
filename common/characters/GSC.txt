@@ -1,0 +1,28 @@
+characters = {
+	GSC_GSC = {#学生会
+		name = "GSC_GSC" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GSC/GSC.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+	GSC_Rin = {#凛
+		name = "GSC_RIN"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GSC/Rin.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

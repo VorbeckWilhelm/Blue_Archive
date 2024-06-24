@@ -1,0 +1,13 @@
+state={
+	id=122
+	name="STATE_122"
+	provinces={
+		31 278 302 373 374 428 632 845 1133 1153 1217 1243 1517 1667 1779 1801 1803 1900 1976 2040 2101 2333 2447 2525 2554 3189 3194 3205 3207 3213 3245 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=ABD
+		add_core_of=ABD
+	}
+}

@@ -1,0 +1,184 @@
+add_namespace = MSC
+country_event = {
+	id = MSC.1 #游戏部不合规
+    picture = gfx_load_5
+    title = MSC.1.t
+    desc = MSC.1.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.1.a 
+		trigger = {
+			tag = MSC
+		}
+        country_event = { id = MSC.2 days = 1 }
+    }
+}
+country_event = {
+	id = MSC.2 #传奇游戏制作人
+    picture = gfx_load_5
+    title = MSC.2.t
+    desc = MSC.2.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.2.a 
+		trigger = {
+			tag = MSC
+		}
+	}
+}
+country_event = {
+	id = MSC.3 #废部危机
+    picture = gfx_load_5
+    title = MSC.3.t
+    desc = MSC.3.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.3.a 
+		trigger = {
+			tag = MSC
+		}
+	}
+}
+country_event = {
+	id = MSC.4 #找到机子
+    picture = gfx_load_5
+    title = MSC.4.t
+    desc = MSC.4.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.4.a 
+		trigger = {
+			tag = MSC
+		}
+        add_to_variable = { MSC_game_club = 5 }
+	}
+}
+country_event = {
+	id = MSC.5 #AL-IS?  
+    picture = gfx_load_5
+    title = MSC.5.t
+    desc = MSC.5.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.5.a 
+		trigger = {
+			tag = MSC
+		}
+        add_to_variable = { MSC_game_club = 5 }
+	}
+}
+country_event = {
+	id = MSC.6 #导管室遇袭 
+    picture = gfx_load_5
+    title = MSC.6.t
+    desc = MSC.6.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.6.a 
+		trigger = {
+			tag = MSC
+		}
+        add_to_variable = { MSC_game_club = 5 }
+	}
+}
+country_event = {
+	id = MSC.7 #我们的努力
+    picture = gfx_load_5
+    title = MSC.7.t
+    desc = MSC.7.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.7.a 
+		trigger = {
+			tag = MSC
+		}
+        set_country_flag = our_effort
+	}
+}
+country_event = {
+	id = MSC.8 #我们的答卷
+    picture = gfx_load_5
+    title = MSC.8.t
+    desc = MSC.8.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.8.a 
+		trigger = {
+			tag = MSC
+		}
+        if = {
+            limit = { check_variable = { MSC_game_club > 50 } }
+        country_event = { id = MSC.9 days = 1}
+        else = {
+        country_event = { id = MSC.10 days = 1}         
+        }
+        }
+	}
+}
+country_event = {
+	id = MSC.9 #游戏部合规
+    picture = gfx_load_5
+    title = MSC.9.t
+    desc = MSC.9.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.9.a 
+		trigger = {
+			tag = MSC
+		}
+        set_country_flag = MSC_game_club_compliance
+	}
+}
+country_event = {
+	id = MSC.10 #游戏部废部
+    picture = gfx_load_5
+    title = MSC.10.t
+    desc = MSC.10.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.10.a 
+		trigger = {
+			tag = MSC   
+		}
+	}
+}
+#国策C阶段事件
+country_event = {
+	id = MSC.11 #要塞都市？
+    picture = gfx_load_5
+    title = MSC.11.t
+    desc = MSC.11.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.11.a 
+		trigger = {
+			tag = MSC   
+		}
+        country_event = { id = MCS.12 days = 1 }
+	}
+}
+country_event = {
+	id = MSC.12 #莉央？
+    picture = gfx_load_5
+    title = MSC.12.t
+    desc = MSC.12.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = MSC.12.a 
+		trigger = {
+			tag = MSC   
+		}
+	}
+}

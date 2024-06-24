@@ -1,0 +1,980 @@
+focus_tree = {
+	id = MSC_Main_FocusTree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MSC
+		}
+	}
+	continuous_focus_position = {
+		x = 100
+		y = 1500
+	}
+	default = no
+	#政治线第一阶段
+	focus = {
+		id = MSC_A_0
+		allow_branch = {
+			NOT = {
+				has_completed_focus = MSC_A_10
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = MSC_A_1
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MSC_A_0
+		}
+	}
+	focus = {
+		id = MSC_A_2
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = MSC_A_1
+		}
+		mutually_exclusive = { 
+            focus = MSC_A_3 
+        }
+	}
+	focus = {
+		id = MSC_A_3
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = MSC_A_1
+		}
+		mutually_exclusive = { 
+            focus = MSC_A_2 
+        }
+		mutually_exclusive = { 
+            focus = MSC_A_4 
+        }
+	}
+	focus = {
+		id = MSC_A_4
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = MSC_A_1
+		}
+		mutually_exclusive = { 
+            focus = MSC_A_3 
+        }
+	}
+	focus = {
+		id = MSC_A_5
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = MSC_A_2
+			focus = MSC_A_3
+			focus = MSC_A_4
+		}
+	}
+	focus = {
+		id = MSC_A_6
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = MSC_A_5
+		}
+	}
+	focus = {
+		id = MSC_A_7
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = -2
+		y = 5
+		prerequisite = {
+			focus = MSC_A_6
+		}
+		completion_reward = {
+			country_event = { id = MSC.1 days = 1}
+		}
+	}
+	focus = {
+		id = MSC_A_8
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = MSC_A_6
+		}
+	}
+	focus = {
+		id = MSC_A_9
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 2
+		y = 5
+		prerequisite = {
+			focus = MSC_A_6
+		}
+	}
+	focus = {
+		id = MSC_A_10
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_A_0
+		cost = 10.00
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = MSC_A_7
+		}
+		prerequisite = {
+			focus = MSC_A_8
+		}
+		prerequisite = {
+			focus = MSC_A_9
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	#政治线第二阶段
+	focus = {
+		id = MSC_B_0
+		allow_branch = {
+			has_completed_focus = MSC_A_10
+			NOT = {
+				has_completed_focus = MSC_B_12
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = MSC_B_1
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = -2
+		y =1
+		prerequisite = {
+			focus = MSC_B_0
+		}
+	}
+	focus = {
+		id = MSC_B_2
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MSC_B_0
+		}
+	}
+	focus = {
+		id = MSC_B_3
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = MSC_B_0
+		}
+	}
+	focus = {
+		id = MSC_B_4
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = MSC_B_1
+		}
+		prerequisite = {
+			focus = MSC_B_3
+		}
+	}
+	focus = {
+		id = MSC_B_5
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = MSC_B_1
+		}
+		prerequisite = {
+			focus = MSC_B_3
+		}
+		completion_reward = {
+			set_variable = {
+				MSC_game_club = 50
+			}
+			clamp_temp_variable = {
+				var = MSC_game_club 
+				min = 0
+				max = 100
+			}
+		}
+	}
+	focus = {
+		id = MSC_B_6
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = -4
+		y = 3
+		prerequisite = {
+			focus = MSC_B_4
+		}
+	}
+	focus = {
+		id = MSC_B_7
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = -2
+		y = 3
+		prerequisite = {
+			focus = MSC_B_4
+		}
+	}
+	focus = {
+		id = MSC_B_8
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = MSC_B_4
+		}
+	}
+	focus = {
+		id = MSC_B_9
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = MSC_B_5
+		}
+	}
+	focus = {
+		id = MSC_B_10
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = -2
+		y = 4
+		prerequisite = {
+			focus = MSC_B_6
+		}
+		prerequisite = {
+			focus = MSC_B_7
+		}
+		prerequisite = {
+			focus = MSC_B_8
+		}
+	}
+	focus = {
+		id = MSC_B_11
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = MSC_B_9
+		}
+		completion_reward = {
+			country_event = { id = MSC.8 days = 1 }
+		}
+	}
+	focus = {
+		id = MSC_B_12
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_B_0
+		cost = 10.00
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = MSC_B_10
+		}
+		prerequisite = {
+			focus = MSC_B_11
+		}
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	#政治线第三阶段
+	focus = {
+		id = MSC_C_0
+		allow_branch = {
+			has_completed_focus = MSC_B_12
+			NOT = {
+				has_completed_focus = MSC_C_0
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 0
+		completion_reward = {
+			country_event = {id = MSC.11 }
+		}
+	}
+	#政治线第四阶段
+	focus = {
+		id = MSC_D_0
+		allow_branch = {
+			#has_country_flag = MSC_game_club_compliance
+			has_completed_focus = MSC_C_0
+			NOT = {
+				has_completed_focus = MSC_D_6
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = MSC_D_1
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_D_0
+		cost = 10.00
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = MSC_D_0
+		}
+	}
+	focus = {
+		id = MSC_D_2
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_D_0
+		cost = 10.00
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = MSC_D_0
+		}
+	}
+	focus = {
+		id = MSC_D_3
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_D_0
+		cost = 10.00
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = MSC_D_1
+		}
+		prerequisite = {
+			focus = MSC_D_2
+		}
+	}
+	focus = {
+		id = MSC_D_4
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_D_0
+		cost = 10.00
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = MSC_D_3
+		}
+	}
+	focus = {
+		id = MSC_D_5
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_D_0
+		cost = 10.00
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = MSC_D_4
+		}
+	}
+	focus = {
+		id = MSC_D_6
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_D_0
+		cost = 10.00
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = MSC_D_5
+		}
+	}
+	#政治线第五阶段
+	focus = {
+		id = MSC_E_0
+		allow_branch = {
+			has_completed_focus = MSC_D_6
+			NOT = {
+				has_completed_focus = MSC_E_9
+			}
+		}
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 0
+	}
+	focus = {
+		id = MSC_E_1
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = MSC_E_0
+		}
+		mutually_exclusive = {
+			focus = MSC_E_2
+		}
+	}
+	focus = {
+		id = MSC_E_2
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = MSC_E_0
+		}
+		mutually_exclusive = {
+			focus = MSC_E_1
+		}
+	}
+	focus = {
+		id = MSC_E_3
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = -3
+		y = 2
+		prerequisite = {
+			focus = MSC_E_1
+		}
+	}
+	focus = {
+		id = MSC_E_4
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = MSC_E_1
+		}
+	}
+	focus = {
+		id = MSC_E_5
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = MSC_E_2
+		}
+	}
+	focus = {
+		id = MSC_E_6
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = MSC_E_2
+		}
+	}
+	focus = {
+		id = MSC_E_7
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = -2
+		y = 3
+		prerequisite = {
+			focus = MSC_E_3
+		}
+		prerequisite = {
+			focus = MSC_E_4
+		}
+	}
+	focus = {
+		id = MSC_E_8
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = MSC_E_5
+		}
+		prerequisite = {
+			focus = MSC_E_6
+		}
+	}
+	focus = {
+		id = MSC_E_9
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_E_0
+		cost = 10.00
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = MSC_E_8
+		}
+	}
+	#工业线
+	focus = {
+		id = MSC_I_0
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 13
+		y = 0
+
+	}
+    focus = {
+        id = MSC_I_1
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_I_0
+		}
+        x = 0
+        y = 1
+    }
+	focus = {
+		id = MSC_I_2
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = MSC_I_1
+		}
+	}
+	focus = {
+		id = MSC_I_3
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = MSC_I_1
+		}
+	}
+	focus = {
+		id = MSC_I_4
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = MSC_I_1
+		}
+	}
+	focus = {
+		id = MSC_I_5
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = MSC_I_2
+		}
+		prerequisite = {
+			focus = MSC_I_3
+		}
+		prerequisite = {
+			focus = MSC_I_4
+		}
+		mutually_exclusive = {
+			focus = MSC_I_6
+		}
+	}
+	focus = {
+		id = MSC_I_6
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = MSC_I_2
+		}
+		prerequisite = {
+			focus = MSC_I_3
+		}
+		prerequisite = {
+			focus = MSC_I_4
+		}
+		mutually_exclusive = {
+			focus = MSC_I_5
+		}
+	}
+	focus = {
+		id = MSC_I_7
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = -1
+		y = 4
+		prerequisite = {
+			focus = MSC_I_5
+		}
+	}
+	focus = {
+		id = MSC_I_8
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 1
+		y = 4
+		prerequisite = {
+			focus = MSC_I_6
+		}
+	}
+	focus = {
+		id = MSC_I_9
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = MSC_I_7
+			focus = MSC_I_8
+		}
+	}
+	focus = {
+		id = MSC_I_10
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = -2
+		y = 7
+		prerequisite = {
+			focus = MSC_I_9
+		}
+	}
+	focus = {
+		id = MSC_I_11
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = MSC_I_9
+		}
+	}
+	focus = {
+		id = MSC_I_12
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 2
+		y = 7
+		prerequisite = {
+			focus = MSC_I_9
+		}
+	}
+	focus = {
+		id = MSC_I_13
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 0
+		y = 7
+		prerequisite = {
+			focus = MSC_I_11
+		}
+	}
+	focus = {
+		id = MSC_I_14
+		icon = GFX_goal_unknown
+		relative_position_id = MSC_I_0
+		cost = 10.00
+		x = 0
+		y = 8
+		prerequisite = {
+			focus = MSC_I_10
+		}
+		prerequisite = {
+			focus = MSC_I_12
+		}
+		prerequisite = {
+			focus = MSC_I_13
+		}
+	}
+	#科技线
+	focus = {
+		id = MSC_T_0
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 19
+		y = 0
+
+	}
+    focus = {
+        id = MSC_T_1
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_0
+		}
+        x = 0
+        y = 1
+    }
+	focus = {
+        id = MSC_T_2
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_1
+		}
+        x = -2
+        y = 2
+    }
+	focus = {
+        id = MSC_T_3
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_1
+		}
+        x = 2
+        y = 2
+    }
+	focus = {
+        id = MSC_T_4
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_2
+		}
+        x = -2
+        y = 3
+    }
+	focus = {
+        id = MSC_T_5
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_3
+		}
+        x = 2
+        y = 3
+    }
+	focus = {
+        id = MSC_T_6
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_4
+		}
+		prerequisite = {
+			focus = MSC_T_5
+		}
+        x = 0
+        y = 4
+    }
+	focus = {
+        id = MSC_T_7
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_6
+		}
+        x = 0
+        y = 5
+    }
+	focus = {
+        id = MSC_T_8
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_T_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_T_7
+		}
+        x = 0
+        y = 6
+    }
+	#军事线
+	focus = {
+		id = MSC_M_0
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 25
+		y = 0
+
+	}
+    focus = {
+        id = MSC_M_1
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_0
+		}
+        x = -2
+        y = 1
+    }
+	focus = {
+        id = MSC_M_2
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_0
+		}
+        x = 0
+        y = 1
+    }
+	focus = {
+        id = MSC_M_3
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_0
+		}
+        x = 2
+        y = 1
+    }
+	focus = {
+        id = MSC_M_4
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_1
+		}
+        x = -2
+        y = 2
+    }
+	focus = {
+        id = MSC_M_5
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_2
+		}
+        x = 0
+        y = 2
+    }
+	focus = {
+        id = MSC_M_6
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_3
+		}
+        x = 2
+        y = 2
+    }
+	focus = {
+        id = MSC_M_7
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_4
+		}
+        x = -2
+        y = 3
+    }
+	focus = {
+        id = MSC_M_8
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_5
+		}
+		prerequisite = {
+			focus = MSC_M_6
+		}
+        x = 1
+        y = 3
+    }
+	focus = {
+        id = MSC_M_9
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_7
+		}
+		prerequisite = {
+			focus = MSC_M_8
+		}
+        x = 0
+        y = 4
+    }
+	focus = {
+        id = MSC_M_10
+        icon = GFX_goal_unknown
+		relative_position_id = MSC_M_0
+        cost = 10
+        prerequisite = {
+			focus = MSC_M_9
+		}
+        x = 0
+        y = 5
+    }
+}

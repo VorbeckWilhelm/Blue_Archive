@@ -1,0 +1,498 @@
+add_namespace = TND
+country_event = { #圣娅遇刺
+	id = TND.1
+    picture = gfx_load_5
+    title = TND.1.t
+    desc = TND.1.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.1.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #建立补课部
+	id = TND.3
+    picture = gfx_load_5
+    title = TND.3.t
+    desc = TND.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = TND.3.a 
+		trigger = {
+			tag = TND
+		}
+        add_ideas = {
+            TND_buff
+        }
+	}
+}
+country_event = { #多整了的事件
+	id = TND.2
+    picture = gfx_load_5
+    title = TND.2.t
+    desc = TND.2.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.2.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #合宿决定
+	id = TND.4
+    picture = gfx_load_5
+    title = TND.4.t
+    desc = TND.4.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.4.a 
+		trigger = {
+			tag = TND
+		}
+        set_country_flag = schale_interfered
+	}
+    option = {
+        name = TND.4.b
+        trigger = {
+            tag = TND
+        }
+    }
+}
+country_event = { #学力水平测试
+	id = TND.5
+    picture = gfx_load_5
+    title = TND.5.t
+    desc = TND.5.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.5.a 
+		trigger = {
+			tag = TND
+		}
+        set_global_flag = fair_testing
+        complete_national_focus = TND_A_14
+	}
+    option = { 
+        name = TND.5.b
+		trigger = {
+			tag = TND
+		}
+        complete_national_focus = TND_A_14
+	}
+}
+country_event = { #考试合格
+	id = TND.6
+    picture = gfx_load_5
+    title = TND.6.t
+    desc = TND.6.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.6.a 
+		trigger = {
+			tag = TND
+		}
+
+	}
+}
+country_event = { #考试未合格
+	id = TND.7
+    picture = gfx_load_5
+    title = TND.7.t
+    desc = TND.7.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.7.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #切换国策用的事件
+	id = TND.8
+    picture = gfx_load_5
+    title = TND.8.t
+    desc = TND.8.d
+    trigger = {
+        AND = {
+            has_completed_focus = TND_A_12
+            has_country_flag = test_finished 
+        }
+    }
+    mean_time_to_happen = { days = 14 }
+    fire_only_once = yes	
+    option = { 
+        name = TND.8.a 
+		trigger = {
+			tag = TND
+		}
+        mark_focus_tree_layout_dirty = yes
+	}
+}
+#第二阶段事件
+country_event = { #条约签署日
+	id = TND.9
+    picture = gfx_load_5
+    title = TND.9.t
+    desc = TND.9.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.9.a 
+		trigger = {
+			tag = TND
+		}
+        country_event = {id = TND.10 days = 1 }
+}
+}
+country_event = { #条约开幕式
+	id = TND.10
+    picture = gfx_load_5
+    title = TND.10.t
+    desc = TND.10.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.10.a 
+		trigger = {
+			tag = TND
+		}
+        country_event = {id = TND.11 days = 1 }
+	}
+}
+country_event = { #条约爆炸
+	id = TND.11
+    picture = gfx_load_5
+    title = TND.11.t
+    desc = TND.11.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.11.a 
+		trigger = {
+			tag = TND
+		}
+        retire_country_leader = yes
+        add_ideas = TND_buff2
+        GHN = {
+            country_event = { id = GHN.1 days = 1 }
+	    }
+        SLE = {
+            country_event = { id = SLE.2 days = 1 }
+        }
+    }
+}
+
+country_event = { #圣娅二次遇刺（只有圣娅受伤的世界达成了）
+	id = TND.12
+    picture = gfx_load_5
+    title = TND.12.t
+    desc = TND.12.d
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+        AND = {
+            has_country_flag = bukebutuixue
+            has_idea = TND_buff2  
+        }
+    }
+    fire_only_once = yes	
+    option = { 
+        name = TND.12.a 
+		trigger = {
+			tag = TND
+		}
+        set_country_flag = Seia_assassinated
+	}
+}
+#第三阶段事件
+#左线事件
+country_event = { #不明势力袭击
+	id = TND.13
+    picture = gfx_load_5
+    title = TND.13.t
+    desc = TND.13.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.13.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #真正的敌人
+	id = TND.14
+    picture = gfx_load_5
+    title = TND.14.t
+    desc = TND.14.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.14.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #与格黑那白和
+	id = TND.15
+    picture = gfx_load_5
+    title = TND.15.t
+    desc = TND.15.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.15.a 
+		trigger = {
+			tag = TND
+		}
+        white_peace = TND
+		white_peace = GHN
+	}
+}
+country_event = {
+	id = TND.16 #阿拜多斯志愿军
+    picture = gfx_load_5
+    title = TND.16.t
+    desc = TND.16.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.16.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #这个是不小心多整了的事件
+	id = TND.17
+    picture = gfx_load_5
+    title = TND.17.t
+    desc = TND.17.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.17.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #日富美演讲
+	id = TND.18
+    picture = gfx_load_5
+    title = TND.18.t
+    desc = TND.18.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.18.a 
+		trigger = {
+			tag = TND
+		}
+        country_event = { id = TND.19 days = 1 }
+	}
+}
+country_event = { #新的伊甸园
+	id = TND.19
+    picture = gfx_load_5
+    title = TND.19.t
+    desc = TND.19.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.19.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #与格黑那军事同盟
+	id = TND.20
+    picture = gfx_load_5
+    title = TND.20.t
+    desc = TND.20.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.20.a 
+		trigger = {
+			tag = TND
+		}
+        TND = { add_to_faction = GHN }
+        mark_focus_tree_layout_dirty = yes
+	}
+}
+#中线事件
+country_event = { #阿里乌斯的背叛
+	id = TND.21
+    picture = gfx_load_5
+    title = TND.21.t
+    desc = TND.21.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.21.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+#右线事件
+country_event = { #求助补课部
+	id = TND.22
+    picture = gfx_load_5
+    title = TND.22.t
+    desc = TND.22.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.22.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #与格黑那白和
+	id = TND.23
+    picture = gfx_load_5
+    title = TND.23.t
+    desc = TND.23.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.23.a 
+		trigger = {
+			tag = TND
+		}
+        white_peace = TND
+        white_peace = GHN
+	}
+}
+country_event = { #这个是整多了的事件
+	id = TND.24
+    picture = gfx_load_5
+    title = TND.24.t
+    desc = TND.24.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.24.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #阿拜多斯志愿军
+	id = TND.25
+    picture = gfx_load_5
+    title = TND.25.t
+    desc = TND.25.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.25.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #演讲
+	id = TND.26
+    picture = gfx_load_5
+    title = TND.26.t
+    desc = TND.26.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.26.a 
+		trigger = {
+			tag = TND
+		}
+        country_event = {id = TND.27 days = 1}
+	}
+}
+country_event = { #放弃伊甸
+	id = TND.27
+    picture = gfx_load_5
+    title = TND.27.t
+    desc = TND.27.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.27.a 
+		trigger = {
+			tag = TND
+		}
+        mark_focus_tree_layout_dirty = yes
+	}
+}
+#第四段国策事件
+country_event = { #夏莱要求重建茶会
+	id = TND.28
+    picture = gfx_load_5
+    title = TND.28.t
+    desc = TND.28.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.28.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+#左线
+country_event = { #战后追究责任
+	id = TND.29
+    picture = gfx_load_5
+    title = TND.29.t
+    desc = TND.29.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.29.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+country_event = { #要求补课部退学
+	id = TND.31
+    picture = gfx_load_5
+    title = TND.31.t
+    desc = TND.31.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.31.a 
+		trigger = {
+			tag = TND
+		}
+	}
+}
+#第六段国策事件
+country_event = { #基沃托斯的崩溃？
+	id = TND.30
+    picture = gfx_load_5
+    title = TND.30.t
+    desc = TND.30.d
+    is_triggered_only = yes
+    fire_only_once = yes	
+    option = { 
+        name = TND.30.a 
+		trigger = {
+			tag = TND
+		}
+        mark_focus_tree_layout_dirty = yes
+	}
+}

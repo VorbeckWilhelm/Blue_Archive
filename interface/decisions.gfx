@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_decision_robbery"
+		texturefile = "gfx/interface/decisions/gura.dds"
+	}
+}

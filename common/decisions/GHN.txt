@@ -1,0 +1,420 @@
+GHN_politics_struggle_decision = {
+	GHN_PDM_smear_hina = {
+		icon = x
+		cost = 100
+		days_remove = 15
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		# ai_will_do = {
+		# 	factor = X
+		# 	modifier = {
+		# 		factor = X
+		# 	}
+		# }
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = 0.15
+			# }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = 0.15
+			}
+		}
+	}
+	GHN_PDM_sculpture_of_hanuma = {
+		icon = x
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 60
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = 0.1
+			# }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = 0.1
+			}
+		}
+	}
+	GHN_PDM_block_the_perfect_team = {
+		icon = x
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = 0.2
+			# }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = 0.2
+			}
+		}
+	}
+	GHN_PDM_propaganda_domination = {
+		icon = x
+		cost = 100
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = 0.3
+			# }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = 0.3
+			}
+		}
+	}
+
+	GHN_DC_monthly_security_project = {
+		icon = x
+		cost = 90
+		fire_only_once = no
+		days_re_enable = 30
+		days_remove = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = -0.15
+			# }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = -0.15
+			}
+		}
+	}
+	GHN_DC_reduce_cooperation = {
+		icon = x
+		cost = 50
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = -0.2
+			# }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = -0.2
+			}
+		}
+	}
+	GHN_DC_army_training = {
+		icon = x
+		cost = 100
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = -0.25
+			# }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = -0.25
+			}
+		}
+	}
+
+	GHN_DC_get_full_control = {
+		icon = x
+		cost = 200
+		fire_only_once = yes
+		days_remove = 30
+		available = {
+			original_tag = GHN
+			power_balance_value = {
+				id = GHN_power_balance
+				value < -0.8
+			}
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = -0.1
+			# }
+			# add_popularity = {
+			# 	ideology = neutrality
+			# 	popularity = 0.5
+			# }
+			# set_politics = {
+			# 	ruling_party = neutrality
+			# }
+			# set_country_flag = GHN_power_struggle_end
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = -0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+			set_country_flag = GHN_power_struggle_end
+		}
+	}
+	GHN_PDM_get_full_control = {
+		icon = x
+		cost = 200
+		fire_only_once = yes
+		days_remove = 30
+		available = {
+			original_tag = GHN
+			power_balance_value = {
+				id = GHN_power_balance
+				value > 0.8
+			}
+		}
+		complete_effect = {
+			# add_power_balance_value = {
+			# 	id = GHN_power_balance
+			# 	value = 0.1
+			# }
+			# add_popularity = {
+			# 	ideology = fascism
+			# 	popularity = 0.5
+			# }
+			# retire_ideology_leader = neutrality
+			# set_country_flag = GHN_power_struggle_end
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = GHN_power_balance
+				value = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.5
+			}
+			retire_ideology_leader = neutrality
+			set_country_flag = GHN_power_struggle_end
+		}
+	}
+}
+
+
+
+GHN_generic_decision_category = {
+	GHN_propaganda_effort = {
+		icon = x
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.005
+			}
+			add_war_support = 0.01
+			add_stability = 0.001
+		}
+	}
+	GHN_civilian_industrial_effort = {
+		icon = x
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+		}
+	}
+	GHN_military_industrial_effort = {
+		icon = x
+		cost = 50
+		days_remove = 30
+		days_re_enable = 30
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+		}
+	}
+	GHN_security_effort = {
+		icon = x
+		cost = 100
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 7
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+			add_stability = 0.001
+		}
+	}
+	GHN_school_improvment = {
+		icon = x
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 14
+		available = {
+			original_tag = GHN
+		}
+		complete_effect = {
+		}
+	}
+}
+
+
+
+GHN_eden_treaty_decision_category = {
+	EDEN_arius_movement_mission = {
+		icon = x
+		days_mission_timeout = 50
+		fire_only_once = yes
+		is_good = no
+		activation = {
+			has_country_flag = GHN_eden_treaty_decision_group
+		}
+		visible = {
+			has_country_flag = GHN_eden_treaty_decision_group
+		}
+		available = {
+			always = no
+			OR = {
+				check_variable = {
+					eden_treaty_agreement_rate = 100
+				}
+				check_variable = {
+					eden_treaty_agreement_rate > 100
+				}
+			}
+		}
+		timeout_effect = {
+			country_event = {
+				id = GHN.02
+				days = 0
+			}
+			clr_country_flag = GHN_eden_treaty_decision_group
+		}
+	}
+	GHN_conduct_negotiation = {
+		icon = x
+		cost = 50
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 7
+		available = {
+			original_tag = GHN
+			power_balance_value = {
+				id = GHN_power_balance
+				value < 0.1
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				eden_treaty_agreement_rate = 10
+			}
+		}
+	}
+	GHN_hold_press_conference = {
+		icon = x
+		cost = 100
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 2
+		available = {
+			original_tag = GHN
+		}
+		remove_effect = {
+			add_to_variable = {
+				eden_treaty_agreement_rate = 20
+			}
+		}
+	}
+	GHN_ignore_the_pact = {
+		icon = x
+		cost = 45
+		days_remove = 10
+		days_re_enable = 5
+		available = {
+			original_tag = GHN
+			power_balance_value = {
+				id = GHN_power_balance
+				value > 0.3
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				eden_treaty_agreement_rate = -10
+			}
+		}
+	}
+	GHN_non_cooperation = {
+		icon = x
+		cost = 50
+		days_remove = 10
+		days_re_enable = 5
+		available = {
+			original_tag = GHN
+			power_balance_value = {
+				id = GHN_power_balance
+				value > 0.3
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				eden_treaty_agreement_rate = -20
+			}
+		}
+	}
+}
+
+

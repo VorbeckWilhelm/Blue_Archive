@@ -1,0 +1,17 @@
+scripted_gui = {
+	
+	game_club_compliance_ui ={
+		window_name = "MSC_game_club_window"
+		context_type = decision_category
+		visible = {
+			tag = MSC
+		}
+		properties = {
+			MSC_game_club_loading_bar = {
+				frame = MSC_game_club 
+			}
+		}
+		
+		
+	}
+}

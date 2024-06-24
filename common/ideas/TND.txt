@@ -1,0 +1,67 @@
+ideas = {
+
+	country = {
+		TND_buff = {
+		allowed = {
+			always = yes
+			tag = TND
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			conscription_total_factor = 0.1
+		}
+	}
+		TND_buff2 = {
+		allowed = {
+			always = yes
+			tag = TND
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {	
+			army_attack_factor = -0.3
+			army_defence_factor = -0.3
+			army_org_factor = -0.1
+		}
+	}
+	TND_buff3 = {
+		allowed = {
+			always = yes
+			tag = TND
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		targeted_modifier = {
+			tag = GHN
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+	TND_buff4 = {
+		allowed = {
+			always = yes
+			tag = TND
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			conscription_total_factor = -0.3
+			political_power_factor = 0.25
+			production_speed_buildings_factor = 0.1
+			research_speed_factor = 0.05
+			stability_factor = 0.15
+			war_support_factor = 0.5
+			army_org_factor = 0.05
+		}
+	}
+}
+}

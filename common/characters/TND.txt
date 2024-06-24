@@ -1,0 +1,41 @@
+characters = {
+	TND_Nagisa = {#昏睡红茶
+		name = "TND_NAGISA" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TND/Nagisa.png"
+			}
+		}
+		country_leader = {
+			ideology = theocratic_authoritarianism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+	TND_Mika = {#粉红大猩猩
+		name = "TND_MIKA"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TND/Mika.png"
+			}
+		}
+		country_leader = {
+			ideology = theocratic_totalitarianism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+	TND_Seia = {#山海经间谍
+		name = "TND_SEIA"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TND/Seia.png"
+			}
+		}
+		country_leader = {
+			ideology = theocracy
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

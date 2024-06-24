@@ -1,0 +1,43 @@
+add_namespace = KAI
+country_event = {
+	id = KAI.1
+    picture = gfx_load_5
+    title = KAI.1.t
+    desc = KAI.1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = KAI.1.a 
+		trigger = {
+			tag = KAI
+		}
+	}
+}
+country_event = {
+	id = KAI.2
+    picture = gfx_load_5
+    title = KAI.2.t
+    desc = KAI.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = KAI.2.a 
+		trigger = {
+			tag = KAI
+		}
+	}
+}
+country_event = {
+	id = KAI.3
+    picture = gfx_load_5
+    title = KAI.3.t
+    desc = KAI.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        name = KAI.3.a 
+		trigger = {
+			tag = KAI
+		}
+	}
+}

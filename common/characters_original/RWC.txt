@@ -1,0 +1,28 @@
+characters = {
+	RWC_cherino = {
+		name = "RWC_CHERINO" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RWC/cherino.png"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+# 	RWC_minori = {
+# 		name = "Yasumori Minori"
+# 		portraits = {
+# 			civilian = {
+# 				large = "gfx/leaders/RWC/minori.dds"
+# 			}
+# 		}
+# 		country_leader = {
+# 			ideology = marxism
+# 			expire = "2100.1.1.1"
+# 			id = -1
+# 		}
+# 	}
+}

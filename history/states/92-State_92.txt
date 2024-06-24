@@ -1,0 +1,13 @@
+state={
+	id=92
+	name="STATE_92"
+	provinces={
+		160 376 412 524 916 978 1257 1268 1281 1369 2180 2306 2323 2510 3031 3038 3047 3068 3074 3100 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=MSC
+		add_core_of=MSC
+	}
+}

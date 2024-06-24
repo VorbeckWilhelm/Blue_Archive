@@ -1,0 +1,25 @@
+MSC_game_club_decision_category = {
+	scripted_gui = game_club_compliance_ui
+
+	allowed = {
+		original_tag = MSC
+	}
+	visible = {
+		has_completed_focus = MSC_B_5
+		NOT = {
+			has_completed_focus = MSC_B_11
+		}
+	}
+	#visible_when_empty = yes
+	priority = 10
+}
+
+MSC_find_back_AL_IS_decision_category = {
+	scripted_gui = 
+	allowed = { 
+		original_tag = MSC
+	}
+	visible = {
+		
+	}
+}

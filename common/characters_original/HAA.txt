@@ -1,0 +1,15 @@
+characters = {
+	HAA_niya = {
+		name = "HAA_NIYA" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAA/niya.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

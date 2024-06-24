@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_eden_treaty_pic"
+		textureFile = "gfx/decision_pictures/eden_treaty_decision.png"
+	}
+}

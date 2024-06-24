@@ -1,0 +1,78 @@
+add_namespace = GHN
+country_event = {
+	id = GHN.01 #伊甸园条约-提出+谈判
+	picture = x
+	title = GHN.1.t
+	desc = GHN.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		# mark_focus_tree_layout_dirty = yes
+		# set_country_flag = GHN_eden_treaty_decision_group
+		# set_country_flag = GHN_02_event_activate
+	}
+	# mean_time_to_happen = {
+	# 	days = 30
+	# }
+	trigger = {
+		has_completed_focus = GHN_A_10
+	}
+	option = {
+		name = GHN.01.a
+		trigger = {
+			original_tag = GHN
+		}
+		# country_event = {
+		# 	id = GHN.02
+		# 	days = 30
+		# }
+		set_country_flag = GHN_eden_treaty_decision_group
+		set_country_flag = GHN_02_event_activate
+		set_variable = {
+			eden_treaty_agreement_rate = 0
+		}
+	}
+}
+country_event = {
+	id = GHN.02 #圣堂大爆炸
+	picture = x
+	title = GHN.2.t
+	desc = GHN.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = GHN_B_part_activate
+		mark_focus_tree_layout_dirty = yes
+		add_ideas = EDEN_shattered_command_centre
+		# clr_country_flag = GHN_eden_treaty_decision_group
+		retire_country_leader = yes
+		# create_country_leader = {
+		# 	name = "GHN_POWER_VACUUM"
+		# 	picture = x
+		# 	ideology = militarism
+		# }
+		GHN_POWER_VACUUM = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "2100.1.1.1"
+					ideology = militarism
+					traits = {}
+				}
+			}
+			promote_leader = yes
+		}
+	}
+	# mean_time_to_happen = {
+	# 	days = 14
+	# }
+	trigger = {
+		has_country_flag = GHN_02_event_activate
+	}
+	option = {
+		name = GHN.02.a
+		trigger = {
+			original_tag = GHN
+		}
+		set_country_flag = GHN_power_struggle_end
+	}
+}

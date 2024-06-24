@@ -1,0 +1,28 @@
+characters = {
+	ABD_Hoshino = {#星野
+		name = "ABD_HOSHINO" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ABD/Hoshino.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+	ABD_Ayane = {#绫音
+		name = "ABD_AYANE" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ABD/Ayane.png"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			expire = "2100.1.1.1"
+			id = -1
+		}
+	}
+}

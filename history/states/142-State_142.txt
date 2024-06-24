@@ -1,0 +1,13 @@
+state={
+	id=142
+	name="STATE_142"
+	provinces={
+		15 103 477 488 514 528 662 707 713 810 959 966 1041 1092 1160 1318 1710 1752 2212 2297 2337 2343 2505 3252 3271 3282 3290 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=SHJ
+		add_core_of=SHJ
+	}
+}

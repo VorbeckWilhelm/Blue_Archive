@@ -1,0 +1,13 @@
+state={
+	id=47
+	name="STATE_47"
+	provinces={
+		84 215 533 991 996 1186 1221 1236 1253 1399 1526 1532 1703 1748 1796 2019 2098 2117 2290 2786 2803 2811 2822 2825 2838 2858 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=TND
+		add_core_of=TND
+	}
+}

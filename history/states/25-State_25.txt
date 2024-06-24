@@ -1,0 +1,13 @@
+state={
+	id=25
+	name="STATE_25"
+	provinces={
+		305 568 653 748 918 980 1090 1297 1343 1396 1440 1525 1691 1827 1941 2042 2155 2208 2349 2358 2574 2621 2626 2641 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=VLK
+		add_core_of=VLK
+	}
+}

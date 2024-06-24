@@ -1,0 +1,13 @@
+state={
+	id=14
+	name="STATE_14"
+	provinces={
+		598 817 1238 2049 2327 3224 3226 3240 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	history={
+		owner=MSC
+		add_core_of=MSC
+	}
+}
